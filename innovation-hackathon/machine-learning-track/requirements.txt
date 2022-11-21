@@ -1,0 +1,16 @@
+## This file is added for reproducibility only and intentionally not updated regularly. ##
+## To keep your system secure, please always update to the latest versions.		##
+
+daal==2021.6.0
+daal4py==2021.6.3
+dask==2022.1.1
+matplotlib==3.5.3
+matplotlib-inline==0.1.6
+modin==0.15.2
+numpy==1.23.2
+pandas==1.4.3
+plotly==5.10.0
+scikit-learn==1.1.2
+scikit-learn-intelex==2021.6.3
+seaborn==0.11.2
+xgboost==1.6.1
