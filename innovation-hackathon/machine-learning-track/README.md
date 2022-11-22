@@ -1,5 +1,5 @@
 
-<center><img src="media/ML_AXG-22-11_Software_Dev_Hackathon.png" style="width:80%;border-radius:15px"/></center>
+<center><img src="media/ML_AXG-22-11_Software_Dev_Hackathon.png" style="width:auto;border-radius:15px"/></center>
 
 # Welcome to the Machine Learning Track! 🚀
 
@@ -16,7 +16,7 @@ The main libraries used in this notebook include:
 
 For a list of all prerequisites, please refer to the `requirements.txt` file.
 ### Dataset
-The dataset used in this notebook can be generated using the bash script provided in the Predictive Asset Analytics repository. For instructions on how to do this, please refer to a detailed overview [here](https://github.com/oneapi-src/predictive-asset-health-analytics#run-the-code-for-test-dataset-generation-training-the-model-and-prediction).
+The dataset used in this notebook can be generated following the instructions provided in the Predictive Asset Analytics repository [here](https://github.com/oneapi-src/predictive-asset-health-analytics#run-the-code-for-test-dataset-generation-training-the-model-and-prediction).
 
 Alternatively, you may substitute the data with your own tabular/structured dataset.
 
