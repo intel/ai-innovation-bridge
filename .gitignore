@@ -1,3 +1,3 @@
 .ipynb_checkpoints
-.pkl
+*.pkl
 dask-worker-space/
