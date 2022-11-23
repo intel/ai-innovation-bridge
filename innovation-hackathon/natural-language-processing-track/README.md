@@ -1,5 +1,5 @@
 
-<p align="center"><img src="pngs/20220926_hackathon_nlp_track.png" width="600" /></p>
+<p align="center"><img src="pngs/20220926_hackathon_nlp_track.png" width="700" /></p>
 
 # Welcome to the Natural Language Processing Track! 🚀
 
@@ -28,7 +28,3 @@ I have provided a [docker-compose.yml](docker-compose.yml) file and a [Dockerfil
 ```
 docker compose up -d
 ```
-
-
-
-
