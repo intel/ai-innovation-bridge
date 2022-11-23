@@ -16,7 +16,7 @@ There is a [requirements.txt](requirements.txt) file with all of the required Py
 Please visit [this link](https://www.intel.com/content/www/us/en/developer/videos/ai-for-social-good-hackathon.html) to find the video series associated to the Hackathon, which includes a step-by-step exlanation through the two notebooks.
 
 ### Dataset
-I do not provide the data in this repository. The data can be downloaded from [Kaggle here](https://www.kaggle.com/datasets/deepcontractor/200k-short-texts-for-humor-detection).
+The dataset is a humor dataset with 200,000 rows. Each row has a statement and an associated label of humorous or not humorous. I do not provide the data in this repository. The data can be downloaded from [Kaggle here](https://www.kaggle.com/datasets/deepcontractor/200k-short-texts-for-humor-detection).
 
 ### Notebooks
 I have provided two demo notebooks:
