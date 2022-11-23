@@ -24,7 +24,7 @@ I have provided two demo notebooks:
 2. [02_Quantization_FP32toINT8_NLP_Demo.ipynb](02_Quantization_FP32toINT8_NLP_Demo.ipynb) - This notebook goes over quantizing an NLP model from FP32 to INT8 to greatly increase inference speed on an Intel® 3rd Generation Xeon® CPU.
 
 ### Docker
-I have provided a [docker-compose.yml](docker-compose.yml) file and a [Dockerfile](Dockerfile) here for the Habana Gaudi instance so that you can run the following command to build 8 individual Docker containers that each only look at 1 of the 8 HPU devices present on the Habana Gaudi instance and start up a Jupyter Labs server:
+I have provided a [docker-compose.yml](docker-compose.yml) file and a [Dockerfile](Dockerfile) here for the Habana Gaudi instance so that you can run the following command to build 8 individual Docker containers that each only look at 1 of the 8 HPU devices present on the Habana Gaudi instance and each container starts up a Jupyter Labs server:
 ```
 docker compose up -d
 ```
