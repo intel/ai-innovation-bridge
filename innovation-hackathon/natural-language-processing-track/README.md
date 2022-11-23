@@ -1,5 +1,5 @@
 
-<center><img src="pngs/20220926_hackathon_nlp_track.png" style="width:auto;border-radius:15px"/></center>
+<p align="center"><img src="pngs/20220926_hackathon_nlp_track.png" width="600" /></p>
 
 # Welcome to the Natural Language Processing Track! 🚀
 
