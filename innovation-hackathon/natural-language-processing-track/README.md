@@ -5,7 +5,7 @@
 
 Author: Benjamin Consolvo, AI Solutions Engineer Manager at Intel
 
-In this track of the hackathon, you will find two sample notebooks that were used in the NLP track of the AI Hackathon at Intel Innovation 2022. This notebook explores a binary classification humor dataset and optimization techniques for model training, hyperparameter tuning, and inference. 
+In this track of the hackathon, you will find two sample notebooks that were used in the NLP track of the AI Hackathon at Intel Innovation 2022, as well as some associated configuration files.
 
 ## Getting Started
 
