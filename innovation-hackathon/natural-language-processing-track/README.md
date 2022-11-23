@@ -10,7 +10,11 @@ In this track of the hackathon, you will find two sample notebooks that were use
 ## Getting Started
 
 ### Installation
-There is a [requirements.txt](requirements.txt) file with all of the required Python packages. You can use the usual `pip3 install -r requirements.txt` from the command line to install the necessary packages. I have purposefully commented out PyTorch in the last line of the requirements.txt file (`#torch==1.12.0`) because for the Habana Gaudi training portion, you need to use the SynapseAI fork of PyTorch ([see installation guide here](https://docs.habana.ai/en/latest/Installation_Guide/index.html#gaudi-installation-guide)). However, I also have provided a Docker solution below to simplify the process on a Habana Gaudi instance.
+There is a [requirements.txt](requirements.txt) file with all of the required Python packages. You can use the usual 
+```
+pip3 install -r requirements.txt
+``` 
+from the command line to install the necessary packages. I have purposefully commented out PyTorch in the last line of the requirements.txt file (`#torch==1.12.0`) because for the Habana Gaudi training portion, you need to use the SynapseAI fork of PyTorch ([see installation guide here](https://docs.habana.ai/en/latest/Installation_Guide/index.html#gaudi-installation-guide)). However, I also have provided a Docker solution below to simplify the process on a Habana Gaudi instance.
 
 ### Video Demo
 Please visit [this link](https://www.intel.com/content/www/us/en/developer/videos/ai-for-social-good-hackathon.html) to find the video series associated to the Hackathon, which includes a step-by-step exlanation through the two notebooks.
