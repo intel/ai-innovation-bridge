@@ -1,4 +1,4 @@
-<img src="machine-learning-track/media/AXG-22-11_Software_Dev_Hackathon_Adaptations_1500x500_v0.png" style="width:auto;border-radius:15px">
+<p align="center"><img src="machine-learning-track/media/AXG-22-11_Software_Dev_Hackathon_Adaptations_1500x500_v0.png" style="width:auto;border-radius:15px"/></p>
 
 # Welcome to the Intel<sup>&reg;</sup> Innovation 2022 AI Hackathon! 🚀
 
