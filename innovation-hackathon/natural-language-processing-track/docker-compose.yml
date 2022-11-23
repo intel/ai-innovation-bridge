@@ -1,0 +1,81 @@
+services:
+  habanahack8080: 
+    build:
+      context: .
+      target: habanahack8080
+    environment:
+      - HABANA_VISIBLE_DEVICES=0
+      - OMPI_MCA_btl_vader_single_copy_mechanism=none
+    runtime: habana
+    network_mode: host
+    ipc: host
+  habanahack8081:
+    build:
+      context: .
+      target: habanahack8081
+    environment:
+      - HABANA_VISIBLE_DEVICES=1
+      - OMPI_MCA_btl_vader_single_copy_mechanism=none
+    runtime: habana
+    network_mode: host
+    ipc: host
+  habanahack8082:
+    build:
+      context: .
+      target: habanahack8082
+    environment:
+      - HABANA_VISIBLE_DEVICES=2
+      - OMPI_MCA_btl_vader_single_copy_mechanism=none
+    runtime: habana
+    network_mode: host
+    ipc: host
+  habanahack8083:
+    build:
+      context: .
+      target: habanahack8083
+    environment:
+      - HABANA_VISIBLE_DEVICES=3
+      - OMPI_MCA_btl_vader_single_copy_mechanism=none
+    runtime: habana
+    network_mode: host
+    ipc: host
+  habanahack8084:
+    build:
+      context: .
+      target: habanahack8084
+    environment:
+      - HABANA_VISIBLE_DEVICES=4
+      - OMPI_MCA_btl_vader_single_copy_mechanism=none
+    runtime: habana
+    network_mode: host
+    ipc: host
+  habanahack8085:
+    build:
+      context: .
+      target: habanahack8085
+    environment:
+      - HABANA_VISIBLE_DEVICES=5
+      - OMPI_MCA_btl_vader_single_copy_mechanism=none
+    runtime: habana
+    network_mode: host
+    ipc: host
+  habanahack8086:
+    build:
+      context: .
+      target: habanahack8086
+    environment:
+      - HABANA_VISIBLE_DEVICES=6
+      - OMPI_MCA_btl_vader_single_copy_mechanism=none
+    runtime: habana
+    network_mode: host
+    ipc: host    
+  habanahack8087:
+    build:
+      context: .
+      target: habanahack8087
+    environment:
+      - HABANA_VISIBLE_DEVICES=7
+      - OMPI_MCA_btl_vader_single_copy_mechanism=none
+    runtime: habana
+    network_mode: host
+    ipc: host  
