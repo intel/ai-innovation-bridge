@@ -21,7 +21,7 @@ I do not provide the data in this repository. The data can be downloaded from [K
 ### Notebooks
 I have provided two demo notebooks:
 1. [01_TrainingHumorDetection_HabanaGaudi_Demo.ipynb](01_TrainingHumorDetection_HabanaGaudi_Demo.ipynb) - This notebook goes over training an NLP DistilBERT model for determining if a statement would be considered as humorous or not, on a Habana® Gaudi® HPU accelerator.
-2. [02_Quantization_FP32toINT8_NLP_Demo.ipynb](02_Quantization_FP32toINT8_NLP_Demo.ipynb) - This notebook goes over quantizing an NLP model from FP32 to INT8 to greatly increase inference speed!
+2. [02_Quantization_FP32toINT8_NLP_Demo.ipynb](02_Quantization_FP32toINT8_NLP_Demo.ipynb) - This notebook goes over quantizing an NLP model from FP32 to INT8 to greatly increase inference speed on an Intel® 3rd Generation Xeon® CPU.
 
 ### Docker
 I have provided a [docker-compose.yml](docker-compose.yml) file and a [Dockerfile](Dockerfile) here for the Habana Gaudi instance so that you can run the following command to build 8 individual Docker containers that each only look at 1 of the 8 HPU devices present on the Habana Gaudi instance and start up a Jupyter Labs server:
