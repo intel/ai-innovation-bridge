@@ -2,7 +2,7 @@
 
 # <p align="center">Welcome to the Machine Learning Track! 🚀</p>
 
-In this track of the hackathon, you will find the sample notebook that was used in the machine learning track of the AI Hackathon at Intel Innovation 2022. This notebook explores Intel's [Predictive Asset Analytics AI Reference Kit](https://github.com/oneapi-src/predictive-asset-health-analytics) and optimization techniques for model training, hyperparameter tuning, and inference. 
+In this track of the hackathon, you will find the sample notebook that was used in Part I of the machine learning track at the Intel<sup>&reg;</sup> Innovation 2022 AI Hackathon. This notebook explores Intel's [Predictive Asset Analytics AI Reference Kit](https://github.com/oneapi-src/predictive-asset-health-analytics) and optimization techniques for model training, hyperparameter tuning, and inference. 
 
 ## Getting Started
 
@@ -21,9 +21,7 @@ pip3 install -r requirements.txt
 ```
 
 ### Dataset
-The dataset used in this notebook can be generated following the instructions provided in the Predictive Asset Analytics repository [here](https://github.com/oneapi-src/predictive-asset-health-analytics#run-the-code-for-test-dataset-generation-training-the-model-and-prediction).
-
-Alternatively, you may substitute the data with your own tabular/structured dataset.
+The dataset used in this demo consists of 100,000 different utility poles with over 30 features on the overall health of the utility. It can be generated following the instructions provided in the Predictive Asset Health Analytics repository [here](https://github.com/oneapi-src/predictive-asset-health-analytics#run-the-code-for-test-dataset-generation-training-the-model-and-prediction). 
 
 ### Video Demo
-To watch a video demo of this notebook, please visit [this link](https://www.intel.com/content/www/us/en/developer/videos/optimize-utility-maintenance-prediction-ai-kit.html).
+You may also watch a video demo of this notebook [here](https://www.intel.com/content/www/us/en/developer/videos/optimize-utility-maintenance-prediction-ai-kit.html).
