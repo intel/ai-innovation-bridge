@@ -1,3 +1,6 @@
+## This file is added for reproducibility only and intentionally not updated regularly. ##
+## To keep your system secure, please always update to the latest versions.		##
+
 intel-aikit-pytorch=2022.0.0
 cpuonly
 python=3.9.7
