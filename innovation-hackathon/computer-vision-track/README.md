@@ -14,7 +14,7 @@ For a list of all prerequisites, please refer to the `requirements.txt` file.
 
 The dataset in this example can be found at https://www.mvtec.com/company/research/datasets/mvtec-ad
 
-The dataset used during the hackathon can be found at https://www.kaggle.com/datasets/ravirajsinh45/crop-and-weed-detection-data-with-bounding-boxes . If you would like to attempt this, you could adapt the pill example notebook to this data. 
+The dataset used during the hackathon can be found at https://www.kaggle.com/datasets/ravirajsinh45/crop-and-weed-detection-data-with-bounding-boxes . You can adapt the pill tutorial notebook to this dataset. 
 
 ### Link to Video Tutorial 
 
