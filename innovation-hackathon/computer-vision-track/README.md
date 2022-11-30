@@ -7,8 +7,6 @@ In this notebook, we'll introduce the <b>[Visual Quality Inspection AI Reference
 
 ## Part I: Getting Started
 
-## Getting Started
-
 For a list of all prerequisites, please refer to the `requirements.txt` file.
 
 ### Dataset
