@@ -6,6 +6,6 @@ In the first of the two-part AI hackathon at Intel Innovation 2022, participants
 
 ## Table of Contents
 
-- [Computer Vision (CV) Track](https://github.com/intel-innersource/frameworks.ai.ai-hackathon/tree/master/innovation-hackathon/computer-vision-track)
-- [Machine Learning (ML) Track](https://github.com/intel-innersource/frameworks.ai.ai-hackathon/tree/master/innovation-hackathon/machine-learning-track)
-- [Natural Language Processing (NLP) Track](https://github.com/intel-innersource/frameworks.ai.ai-hackathon/tree/master/innovation-hackathon/natural-language-processing-track)
+- [Computer Vision (CV) Track](computer-vision-track)
+- [Machine Learning (ML) Track](machine-learning-track)
+- [Natural Language Processing (NLP) Track](natural-language-processing-track)
