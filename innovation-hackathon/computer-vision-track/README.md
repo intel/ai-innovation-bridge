@@ -7,7 +7,7 @@ In this notebook, we'll introduce the <b>[Visual Quality Inspection AI Reference
 
 ## Part I: Getting Started
 
-For a list of all prerequisites, please refer to the `requirements.txt` file.
+To build a conda env for this project, please reference the conda env file cv_hack.yaml
 
 ### Dataset
 

@@ -1,0 +1,23 @@
+## This file is added for reproducibility only and intentionally not updated regularly. ##
+## To keep your system secure, please always update to the latest versions.		##
+
+name: cv_hack
+channels:
+  - intel
+  - pytorch
+dependencies:
+  - cpuonly
+  - python=3.9.7
+  - pip=21.2.4
+  - pytorch::pytorch==1.12.0
+  - pip:
+    - matplotlib==3.5.1
+    - scikit-learn==1.0.2
+    - opencv-python==4.5.5.64
+    - scipy==1.8.0
+    - seaborn==0.11.2
+    - torchsummary==1.5.1
+    - tqdm==4.64.0
+    - pillow==9.0.1
+    - intel_extension_for_pytorch==1.12.300
+    - torchvision==0.13.0
