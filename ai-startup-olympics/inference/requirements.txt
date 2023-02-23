@@ -1,0 +1,9 @@
+uvicorn
+fastapi
+intel_extension_for_pytorch
+torch
+torchvision
+matplotlib
+seaborn
+scikit-learn
+loguru
