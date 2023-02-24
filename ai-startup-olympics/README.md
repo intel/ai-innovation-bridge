@@ -7,8 +7,8 @@ The AI Startup Olympics is a 3-day event dedicated to accelerating the implement
 For teams that don’t have their own code and data to bring to the event, Intel will provide a set of sample solutions with data and code that participants can use as an alternative starting point.  
 
 # Alternative Hackathon Solutions and Datasets
-- Drone Landing Areas (Computer Vision)
-- Medical Imaging Diagnostics (Computer Vision) 
-- Customer Chatbot (Natural Language Processing) 
-- Disease Prediction (Natural Language Processing)
+- [Drone Landing Areas (Computer Vision)](github.com/oneapi-src/drone-navigation-inspection)
+- [Medical Imaging Diagnostics (Computer Vision)](github.com/oneapi-src/medical-imaging-diagnostics)
+- [Customer Chatbot (Natural Language Processing)](github.com/oneapi-src/customer-chatbot)
+- [Disease Prediction (Natural Language Processing)](github.com/oneapi-src/disease-prediction)
 
