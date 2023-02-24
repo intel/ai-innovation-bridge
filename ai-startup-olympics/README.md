@@ -16,3 +16,14 @@ For teams that don’t have their own code and data to bring to the event, Intel
 Build an ML application based on the provided microservice architecture pattern. The design pattern splits data, training, and inference components into individual microservices. 
 
 ![Image](assets/Pseduo_Microservice_Architecture.png)
+
+## Blueprint Requirements:
+- Application must be split into separate processes containing one or more modules. You must have at least two of the following microservices: data wrangling/processing, training and validation, and inference. 
+- Each microservice must be deployed as a containerized application using docker or other popular container management tools. 
+- At least one of your two microservices must leverage an intel deep learning accelerated extension. 
+- Each microservice must contain an API end-point that can receive HTTP requests in JSON format. 
+- The only compute resources and storage for your solution are the 4th Generation Intel Xeon Bare Metal IDC Instance.
+
+
+
+
