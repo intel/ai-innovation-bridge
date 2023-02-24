@@ -57,19 +57,19 @@ We use a computer vision based model building for quality visual inspection base
 
 ![gif sample solution](assets/Sample_Animation.gif)
 
-Clone AI-Hackathon repository
+#### 1. Clone AI-Hackathon repository
 
 ```
 git clone https://github.com/intel/AI-Hackathon.git
 ```
 
-Check if docker is installed 
+#### 2. Check if docker is installed 
 
 ```
 docker --version
 ```
 
-If you get an error, then follow the instructions below to install docker. 
+If you get an error, then follow the instructions below to install docker. Otherwise, move on to step 3.
 
 ```
 # installing docker 
@@ -82,28 +82,92 @@ sudo gpasswd -a $USER docker
 newgrp docker
 ```
 
-Access the ai-startup-olympics folder
+#### 3. Access the ai-startup-olympics folder
 
 ```
-cd ai-startup-olympics
+cd AI-Hackathon/ai-startup-olympics
 ```
 
-The prep.sh script, downloads the MvTec pills dataset, builds train, test, and blind datasets. It also creates a /models directory for storing training outputs. Run this script before launching your containers. 
+#### 4. The prep.sh script, downloads the MvTec pills dataset, builds train, test, and blind datasets. It also creates a /models directory for storing training outputs. Run this script before launching your containers. 
 
 ```
 bash prep.sh
 ```
 
-The following workflow will allow you to launch the docker containers. 
+#### 5. The following commands will allow you to launch the docker containers. In an ideal scenario, we would use a combination of databases and object stores to move data and information between microservices. In this implemenation, this functionality will be entirely managed using our local disk storage. Since containers have limited access to local disk, we will have to bind use "mind mounts" to give containers access to our local file system with the "-v" command. 
 
 ```
 # launch training container and start /train endpoint server
 docker build -t train -f Dockerfile.Training .
-docker run -d -p 5000:5000 train
+docker run -d -p 5000:5000 -v "$(pwd)":/training/mount train
 
 # launch inference container and start /predict endpoint server
 docker build -t predict -f Dockerfile.Inference .
-docker run -d -p 5001:5001 predict
+docker run -d -p 5001:5001 -v "$(pwd)":/inference/mount predict
+```
+
+#### 6. Check active images and running docker containers 
+
+```
+# check images 
+docker images 
+
+# check active containers 
+docker ps
+```
+
+#### 7. Testing the health of your servers with a ping
+
+```
+# check health of training server
+curl -X GET http://localhost:5000/ping
+
+# check health of inference server
+curl -X GET http://localhost:5001/ping
+
+# you should get the following response if servers are running 
+{"message":"Server is Running"}
+```
+
+#### 8. Make HTTP POST Requests to Training and Inference servers. If you need help verifying your json body of your payload, we recommend using https://jsonformatter.curiousconcept.com/
+
+Making a POST request to the training server
+```
+curl -X POST http://localhost:5000/train -H 'Content-Type: application/json' -d '{"data_folder":"/training/mount/data","neg_class":1,"model_path":"/training/mount/models/pills_vgg.h5"}'
+```
+
+Making a POST request to the inference server
+```
+curl -X POST http://localhost:5001/predict -H 'Content-Type: application/json' -d '{"trained_model_path":"/inference/mount/models/pills_vgg.h5","data_folder":"/inference/mount/data/","batch_size":5}'
+```
+
+## Troubleshooting Suggestions 
+- If you get an Error indicating that a port is already in use you can kill the job running on said port. 
+
+```
+ps aux | grep python
+sudo kill -9 <job id>
+```
+
+- If you are getting "Internal Server Error" - try checking the docker logs
+
+```
+docker logs <container ID>
+
+#find the container ID using `docker ps`
+
+# to track live logs
+docker logs <container ID> --follow
+```
+
+- If you are uncertain about your docker container environment, access a container shell environment using the following commands
+
+```
+# start bash shell
+docker exec -u 0 -it <container ID> bash
+
+# exit shell 
+exit
 ```
 
 
