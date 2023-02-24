@@ -36,6 +36,66 @@ Build an ML application based on the provided microservice architecture pattern.
 
 *Keep in mind that All components of blueprint specs and side quests are open to interpretation by intel staff supporting the judging process.*
 
+# Getting Access to Intel Developer Cloud
+At the time of writing these instructions, the Intel Developer Cloud is in Beta. To receive access to this resource you can visit https://cloud.intel.com 
+
+Once you have your account you'll be able to access various types of compute instances including: 
+- 4th Gen Xeon VMs
+- 4th Gen Xeon Bare Metal 
+- Flex Series ATSM GPUs 
+- Ponte Vecchio Data Center GPUs 
+
+# Running Blueprint Sample Solution
+
+## Reference Solution
+We use a computer vision based model building for quality visual inspection based on a dataset for pharma industry. It includes different data augmentations and train the VGG model using this dataset.
+
+## Key Implementation Details
+- Seperate Packages for Training and Inference
+- Containerized Microservices
+- Fastapi API endpoints
+
+![gif sample solution](assets/Sample_Animation.gif)
+
+Clone AI-Hackathon repository
+
+`git clone https://github.com/intel/AI-Hackathon.git`
+
+Check if docker is installed 
+
+`docker --version`
+
+If you get an error, then follow the instructions below to install docker. 
+
+```
+# installing docker 
+sudo apt-get update
+sudo pat install docker.io
+
+# add docker user to sudo group
+sudo groupadd docker
+sudo gpasswd -a $USER docker
+newgrp docker
+```
+
+access the ai-startup-olympics folder
+
+`cd ai-startup-olympics`
+
+The prep.sh script, downloads the MvTec pills dataset, builds train, test, and blind datasets. It also creates a /models directory for storing training outputs. Run this script before launching your containers. 
+
+`bash prep.sh`
+
+The following workflow will allow you to launch the docker containers. 
+
+```
+docker build -t train -f Dockerfile.Training .
+docker run 
+
+```
+
+
+
 
 
 
