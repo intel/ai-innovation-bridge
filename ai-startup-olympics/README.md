@@ -74,7 +74,7 @@ If you get an error, then follow the instructions below to install docker. Other
 ```
 # installing docker 
 sudo apt-get update
-sudo pat install docker.io
+sudo apt install docker.io
 
 # add docker user to sudo group
 sudo groupadd docker
