@@ -59,11 +59,15 @@ We use a computer vision based model building for quality visual inspection base
 
 Clone AI-Hackathon repository
 
-`git clone https://github.com/intel/AI-Hackathon.git`
+```
+git clone https://github.com/intel/AI-Hackathon.git
+```
 
 Check if docker is installed 
 
-`docker --version`
+```
+docker --version
+```
 
 If you get an error, then follow the instructions below to install docker. 
 
@@ -78,20 +82,28 @@ sudo gpasswd -a $USER docker
 newgrp docker
 ```
 
-access the ai-startup-olympics folder
+Access the ai-startup-olympics folder
 
-`cd ai-startup-olympics`
+```
+cd ai-startup-olympics
+```
 
 The prep.sh script, downloads the MvTec pills dataset, builds train, test, and blind datasets. It also creates a /models directory for storing training outputs. Run this script before launching your containers. 
 
-`bash prep.sh`
+```
+bash prep.sh
+```
 
 The following workflow will allow you to launch the docker containers. 
 
 ```
+# launch training container and start /train endpoint server
 docker build -t train -f Dockerfile.Training .
-docker run 
+docker run -d -p 5000:5000 train
 
+# launch inference container and start /predict endpoint server
+docker build -t predict -f Dockerfile.Inference .
+docker run -d -p 5001:5001 predict
 ```
 
 
