@@ -12,3 +12,7 @@ For teams that don’t have their own code and data to bring to the event, Intel
 - [Customer Chatbot (Natural Language Processing)](github.com/oneapi-src/customer-chatbot)
 - [Disease Prediction (Natural Language Processing)](github.com/oneapi-src/disease-prediction)
 
+# Blueprint Description
+Build an ML application based on the provided microservice architecture pattern. The design pattern splits data, training, and inference components into individual microservices. 
+
+![Image](assets/Pseduo_Microservice_Architecture.png)
