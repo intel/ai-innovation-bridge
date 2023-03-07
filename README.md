@@ -8,3 +8,4 @@ Welcome to the Intel<sup>&reg;</sup> AI Hackathon repo! This repo contains noteb
     - [Machine Learning (ML) Track](innovation-hackathon/machine-learning-track)
     - [Natural Language Processing (NLP) Track](innovation-hackathon/natural-language-processing-track)
 > You may also watch a video demo of these tutorials <b>[here](https://www.intel.com/content/www/us/en/developer/videos/ai-for-social-good-hackathon.html)</b>.
+- [Intel<sup>&reg;</sup> AI Startup Olympics - Blueprint Sample Code](ai-startup-olympics)
