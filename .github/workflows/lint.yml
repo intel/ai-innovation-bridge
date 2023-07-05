@@ -1,0 +1,17 @@
+name: "Lint"
+
+on:
+  pull_request:
+    branches:
+      - '**'
+  push:
+    branches:
+      - '**'
+
+jobs:
+  lint:
+    runs-on: gasp
+    container: "amr-registry.caas.intel.com/heaven/python-3-9:latest"
+    steps:
+      - uses: actions/checkout@v3
+      - uses: intel-innersource/frameworks.actions.python-unittest@black
