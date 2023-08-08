@@ -1,6 +1,6 @@
 # Intel AI Hackathon: Reinvent With Intel Code Base
 
-Welcome to the Intel AI Hackathon, where legacy meets machine learning. Over the span of three exhilarating days, utilize the "How it's Made with Intel" code base to craft revolutionary solutions, taking full advantage of Intel's pre-configured AI reference kits. 
+Welcome to the Intel AI Hackathon, where legacy meets machine learning. Over the span of three days, utilize the "How it's Made with Intel" code base to craft revolutionary solutions, taking full advantage of Intel's pre-configured AI reference kits. 
 
 ## Dive In & Discover
 
