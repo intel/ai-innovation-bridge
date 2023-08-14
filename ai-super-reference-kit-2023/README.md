@@ -1,6 +1,6 @@
-# Intel AI Hackathon: Reinvent With Intel Code Base
+# Intel AI Super Reference Kit Hackathon: Reinvent With Intel Code Base
 
-Welcome to the Intel AI Hackathon, where legacy meets machine learning. Over the span of three days, utilize the "How it's Made with Intel" code base to craft revolutionary solutions, taking full advantage of Intel's pre-configured AI reference kits. 
+Welcome to the Intel AI Hackathon, where legacy meets machine learning. Over the span of three days, utilize the "AI Super Reference Kit" code base to craft revolutionary solutions, taking full advantage of Intel's pre-configured AI reference kits. Everything in this repository serves as template for organizing your own hackathon. Please refer to official hackathon terms and conditions for any active events.
 
 ## Dive In & Discover
 
@@ -19,7 +19,7 @@ Leverage over 30 AI reference kits, each tuned to perfection with Intel optimiza
 
 Whether you're a solo developer or part of a multi-member powerhouse, teams can vary in size. However, ensure you align with the specific rules of your chosen hackathon.
 
-[🔗 **AI Reference Kits that Fair Game**](https://www.intel.com/content/www/us/en/developer/topic-technology/artificial-intelligence/reference-kit-library.html)
+[🔗 **AI Reference Kits that are Fair Game**](https://www.intel.com/content/www/us/en/developer/topic-technology/artificial-intelligence/reference-kit-library.html)
 
 ## Judging Criteria
 
@@ -35,7 +35,7 @@ What will Impress Judges:
 - Building a frontend using Streamlit.
 - Architecting a backend with 2+ containerized services and their corresponding FastAPI endpoints.
 
-## A Glimpse into "How it's Made with Intel"
+## A Glimpse into "Intel AI Super Reference Kit" Codebase
 
 This remarkable code base encapsulates distinct product lifecycle components transitioned from legacy to modern machine learning solutions, powered by Intel's robust AI hardware and software stack. Witness a journey from individual AI Reference Kits to an interconnected pseudo-microservice architecture, making integration into multifaceted applications a breeze.
 
