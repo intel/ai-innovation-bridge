@@ -1,0 +1,32 @@
+version: '3'
+services:
+
+  medication_demand_forecast:
+    build:
+      context: ../medication_demand_forecast/
+      dockerfile: Dockerfile
+    ports:
+      - 5001:5001
+    volumes:
+      - /home/ubuntu/hwi_818/store:/medication_demand_forecast/store
+    restart: on-failure
+
+  robot_maintenance:
+    build:
+      context: ../robot_maintenance/
+      dockerfile: Dockerfile
+    ports:
+      - 5003:5003
+    volumes:
+      - /home/ubuntu/hwi_818/store:/robot_maintenance/store
+    restart: on-failure
+
+  app_frontend:
+    build:
+      context: ../app_frontend/
+      dockerfile: Dockerfile
+    ports:
+      - 5005:5005
+    volumes:
+      - /home/ubuntu/hwi_818/store:/app_frontend/store
+    restart: on-failure

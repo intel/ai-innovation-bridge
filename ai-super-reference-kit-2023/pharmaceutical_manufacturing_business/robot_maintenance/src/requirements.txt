@@ -1,0 +1,8 @@
+daal4py
+pydantic
+xgboost
+fastapi
+numpy
+pandas
+scikit-learn-intelex 
+uvicorn                                 

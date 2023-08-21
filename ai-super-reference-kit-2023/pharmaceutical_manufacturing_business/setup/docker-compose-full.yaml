@@ -1,0 +1,55 @@
+version: '3'
+services:
+
+  medication_demand_forecast:
+    build:
+      context: ../medication_demand_forecast/
+      dockerfile: Dockerfile
+    ports:
+      - 5001:5001
+    volumes:
+      - /home/ubuntu/pharmaceutical-product-lifecycle-solution/store:/medication_demand_forecast/store
+    restart: on-failure
+
+  medication_qaqc:
+    build:
+      context: ../medication_qaqc/
+      dockerfile: Dockerfile
+    ports:
+      - 5002:5002
+    volumes:
+      - /home/ubuntu/pharmaceutical-product-lifecycle-solution/store:/medication_qaqc/store
+    restart: on-failure
+
+  robot_maintenance:
+    build:
+      context: ../robot_maintenance/
+      dockerfile: Dockerfile
+    ports:
+      - 5003:5003
+    volumes:
+      - /home/ubuntu/pharmaceutical-product-lifecycle-solution/store:/robot_maintenance/store
+    restart: on-failure
+
+  supportbot_chatbot:
+    build:
+      context: ../supportbot_chatbot/
+      dockerfile: Dockerfile
+    ports:
+      - 5004:5004
+    volumes:
+      - /home/ubuntu/pharmaceutical-product-lifecycle-solution/store:/supportbot_chatbot/store
+    restart: on-failure
+
+  app_frontend:
+    build:
+      context: ../app_frontend/
+      dockerfile: Dockerfile
+    ports:
+      - 5005:5005
+    volumes:
+      - /home/ubuntu/pharmaceutical-product-lifecycle-solution/store:/app_frontend/store
+    restart: on-failure
+
+
+      
