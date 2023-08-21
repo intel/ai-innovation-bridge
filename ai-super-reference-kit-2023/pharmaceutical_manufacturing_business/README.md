@@ -1,30 +1,46 @@
-![image](https://github.com/eduand-alvarez/lifecycle-solution-1/assets/57263404/ce7c8116-384a-4f10-91c2-6cedcccfbcf4)
+## AI Super Reference Kits: Higlighting How to Innovate Legacy with the Intel AI Stack.
 
-## What is "How it's Made with Intel"?
+AI Super Reference Kits comprise distinct product lifecycle components that have been re-imagined – transforming them from legacy to machine learning solutions powered by the Intel hardware and software AI stack. The enabling technology stack includes components across Intel’s software and hardware portfolio. Each lifecycle component starts with an AI Reference Kit that has been refactored to enable a pseudo-microservice architecture, making them easier to integrate into more complex applications. The integration of multiple kits, showcases how an integrated optimized solution could be made with intel components to address a particular industry challenge. 
 
-This “How it's made with Intel” comprises distinct product lifecycle components that have been re-imagined – transforming them from legacy to machine learning solutions powered by the Intel hardware and software AI stack. The enabling technology stack includes components across Intel’s software and hardware portfolio. Each lifecycle component starts with an AI Reference Kit that has been refactored to enable a pseudo-microservice architecture, making them easier to integrate into more complex applications. The integration of multiple kits, showcases how an integrated optimized solution could be made with intel components to address a particular industry challenge. 
+![image](https://github.com/intel-innersource/frameworks.ai.ai-hackathon/assets/57263404/cc38d230-e93a-414e-b765-9c8a7f281096)
 
-## Available Product Lifecycle Solutions
+A few benefits of the super kits include: 
+- Quickly prototype unified AI solutions with multiple reference kits
+- Leverage sample architecture to plan for scale with essential DevOps tools
+- Build with pre-baked Intel AI optimizations
 
-- [Pharmaceutical Product Lifecycle Solution](Pharmaceutical_Product_Lifecycle_Solution)
-- More coming soon...
+### Available Super AI Reference Kits
 
-## What comes with each Lifecycle Solution?
+- Pharmaceutical Manufacturing Business
+- More coming in 2024...
 
-Each lifecycle solution comes with:
+## Pharmaceutical Manufacturing Business "Super Kit": 
+
+The AI Super Reference Kit titled "Pharmaceuticals Manufacturing Business" integrates cutting-edge tools to streamline and enhance pharmaceutical production processes. Firstly, its demand forecasting module employs a time series prediction CNN-LSTM model optimized for Intel® 4th Generation Xeon® Scalable processors using Intel® Extensions for TensorFlow, ensuring accurate demand projections for various products across multiple locales. In tandem, a predictive asset maintenance system utilizes an XGBoost classifier with the Intel® Extension for Scikit-Learn to preemptively flag equipment in need of service. Visual anomaly detection capabilities, based on VGG-16 or Padim models, are embedded to quickly determine product quality via visual inspection, leveraging technologies such as OpenVINO and Anomalib. Complementing these is a generative AI chatbot, powered by GPT4all-J LLM and RAG, tailored for interactions related to fictitious robotic maintenance situations. All components are adeptly optimized for the Intel® 4th Generation Xeon® Scalable processors, demonstrating the convergence of AI innovation and pharmaceutical manufacturing.
+
+![image](https://github.com/intel-innersource/frameworks.ai.ai-hackathon/assets/57263404/93ae98e1-df30-4db6-b56a-8928748957ff)
+
+### Adaptation Flow of Super Kit
+The Pharmaceutical Manufacturing Business "Super Kit" was adapted from four different AI reference kits. The process involved an architectural refactoring and new data. With the AI Reference Kit code as the starting point, very little work went into AI/ML components, which allowed us to focus on the architectural and deployment elements of the application. 
+
+![image](https://github.com/intel-innersource/frameworks.ai.ai-hackathon/assets/57263404/70fea86d-087a-4cbb-92f9-d00ec6a0ac7f)
+
+### Package Diagram of Super Kit
+The Pharmaceutical Manufacturing Business "Super Kit" contains 5 unique components. Each component contains: 
+- /src folder: contains all of the AI/ML code and FastAPI script
+- Dockerfile: container instructions - used by docker compose
+- README: Basic documentation for the component
+
+  ![image](https://github.com/intel-innersource/frameworks.ai.ai-hackathon/assets/57263404/df6fc5f3-06a8-4ea2-89e3-7fb4ec03cb31)
+
+## What comes with a AI Super Reference Kit?
 - AI/ML Source Code
-- Documenation
-- Docker Container Config Files
-- FastAPI Endpoint Script
-- Deployment Instructions on the Intel Developer Cloud
-- Synthetic Data Generation Scripts (if applicable)
-- Streamlit WebApp Frontend (if applicable)
-- Makefile for easy deployment (if applicable)
-
-## Frontend Prototypes
-Using a low-code webapp framework like streamlit, allows us to bring the solutions to life. The streamlit frontend can be run directly on the localhost and let's you experience and test the functionality of each component. More importantly, it validates the integrated solution API archiecture allowing developers to build a simple prototype before investing in additional development. 
-
-![image](https://github.com/eduand-alvarez/lifecycle-solution-1/assets/57263404/f440fd2a-8ed2-4bc8-82bf-9639dc2aedff)
+- Documentation
+- Docker Container & Docker Compose Config Files
+- FastAPI Endpoint Scripts
+- Synthetic Data Generation Scripts
+- Streamlit WebApp Frontend
+- Makefile for easy deployment 
 
 ## How to Contribute
 If you want to contribute to this project and make it better, your help is very welcome. Contributing is also a great way to learn more about social coding on Github, new technologies and and their ecosystems and how to make constructive, helpful bug reports, feature requests and the noblest of all contributions: a good, clean pull request.
