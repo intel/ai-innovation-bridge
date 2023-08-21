@@ -1,4 +1,4 @@
-# Intel AI Super Reference Kit Hackathon: Reinvent With Intel Code Base
+# Intel AI Super Reference Kit Hackathon: Reinvent With Intel Codebase
 
 The AI Super Reference Kit Challenge allows developers to compete and learn how to build practical AI applications using intel-optimized software on intel hardware platforms.  In this challenge, you assume the persona of a “Consulting AI Developer,” you are tasked with delivering a prototype application to a technology review board in just a few days.  The application must meet the following requirements:
 - Must include at least one modular AI services based on a unique AI Reference Kit
