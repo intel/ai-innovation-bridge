@@ -2,7 +2,7 @@
 
 AI Super Reference Kits comprise distinct product lifecycle components that have been re-imagined – transforming them from legacy to machine learning solutions powered by the Intel hardware and software AI stack. The enabling technology stack includes components across Intel’s software and hardware portfolio. Each lifecycle component starts with an AI Reference Kit that has been refactored to enable a pseudo-microservice architecture, making them easier to integrate into more complex applications. The integration of multiple kits, showcases how an integrated optimized solution could be made with intel components to address a particular industry challenge. 
 
-![image](https://github.com/intel-innersource/frameworks.ai.ai-hackathon/assets/57263404/cc38d230-e93a-414e-b765-9c8a7f281096)
+![image](https://github.com/intel/AI-Hackathon/assets/57263404/5ce3f865-cc64-4a4f-9cd2-fe8416eb9cbf)
 
 A few benefits of the super kits include: 
 - Quickly prototype unified AI solutions with multiple reference kits
@@ -18,12 +18,13 @@ A few benefits of the super kits include:
 
 The AI Super Reference Kit titled "Pharmaceuticals Manufacturing Business" integrates cutting-edge tools to streamline and enhance pharmaceutical production processes. Firstly, its demand forecasting module employs a time series prediction CNN-LSTM model optimized for Intel® 4th Generation Xeon® Scalable processors using Intel® Extensions for TensorFlow, ensuring accurate demand projections for various products across multiple locales. In tandem, a predictive asset maintenance system utilizes an XGBoost classifier with the Intel® Extension for Scikit-Learn to preemptively flag equipment in need of service. Visual anomaly detection capabilities, based on VGG-16 or Padim models, are embedded to quickly determine product quality via visual inspection, leveraging technologies such as OpenVINO and Anomalib. Complementing these is a generative AI chatbot, powered by GPT4all-J LLM and RAG, tailored for interactions related to fictitious robotic maintenance situations. All components are adeptly optimized for the Intel® 4th Generation Xeon® Scalable processors, demonstrating the convergence of AI innovation and pharmaceutical manufacturing.
 
-![image](https://github.com/intel-innersource/frameworks.ai.ai-hackathon/assets/57263404/93ae98e1-df30-4db6-b56a-8928748957ff)
+![image](https://github.com/intel/AI-Hackathon/assets/57263404/f374778e-ee34-4e9f-8801-2a4b03edc099)
+
 
 ### Adaptation Flow of Super Kit
 The Pharmaceutical Manufacturing Business "Super Kit" was adapted from four different AI reference kits. The process involved an architectural refactoring and new data. With the AI Reference Kit code as the starting point, very little work went into AI/ML components, which allowed us to focus on the architectural and deployment elements of the application. 
 
-![image](https://github.com/intel-innersource/frameworks.ai.ai-hackathon/assets/57263404/70fea86d-087a-4cbb-92f9-d00ec6a0ac7f)
+![image](https://github.com/intel/AI-Hackathon/assets/57263404/544a1ad1-2406-4be5-867a-7d4f4e7a346a)
 
 ### Package Diagram of Super Kit
 The Pharmaceutical Manufacturing Business "Super Kit" contains 5 unique components. Each component contains: 
@@ -31,7 +32,7 @@ The Pharmaceutical Manufacturing Business "Super Kit" contains 5 unique componen
 - Dockerfile: container instructions - used by docker compose
 - README: Basic documentation for the component
 
-  ![image](https://github.com/intel-innersource/frameworks.ai.ai-hackathon/assets/57263404/df6fc5f3-06a8-4ea2-89e3-7fb4ec03cb31)
+![image](https://github.com/intel/AI-Hackathon/assets/57263404/0f5f2133-cc40-4bbc-8daa-78ea5ced07f2)
 
 ## What comes with a AI Super Reference Kit?
 - AI/ML Source Code
