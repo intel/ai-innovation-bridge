@@ -1,5 +1,5 @@
 ## Robotics Predictive Maintenance Lifecycle Solution Component
-Introducing our cutting-edge predictive maintenance tool that harnesses the power of the Intel oneDAL library on Xeon CPUs to accelerate XGBoost inference. By leveraging advanced acceleration techniques, our tool enables accurate prediction of maintenance needs, helping you proactively address issues before breakdowns occur and ensuring uninterrupted operations and optimized maintenance schedules.
+The demand predictive asset maintenance component uses an XGBoost classifier to flag assets that need maintenance.  It leverages the Intel® Extension for Scikit-Learn, XGBoost, and daal4py on Intel® 4th Generation Xeon® Scalable processors. 
 
 ![image](https://github.com/intel-innersource/frameworks.ai.ai-hackathon/assets/57263404/f80ad7af-4248-45a6-9b9c-69f47b9a7db6)
 
