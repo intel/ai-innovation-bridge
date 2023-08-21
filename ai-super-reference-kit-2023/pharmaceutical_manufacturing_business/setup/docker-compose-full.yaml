@@ -8,7 +8,7 @@ services:
     ports:
       - 5001:5001
     volumes:
-      - /home/ubuntu/pharmaceutical-product-lifecycle-solution/store:/medication_demand_forecast/store
+      - /home/ubuntu/AI-Hackathon/ai-super-reference-kit-2023/pharmaceutical_manufacturing_business/store:/medication_demand_forecast/store
     restart: on-failure
 
   medication_qaqc:
@@ -18,7 +18,7 @@ services:
     ports:
       - 5002:5002
     volumes:
-      - /home/ubuntu/pharmaceutical-product-lifecycle-solution/store:/medication_qaqc/store
+      - /home/ubuntu/AI-Hackathon/ai-super-reference-kit-2023/pharmaceutical_manufacturing_business/store:/medication_qaqc/store
     restart: on-failure
 
   robot_maintenance:
@@ -28,7 +28,7 @@ services:
     ports:
       - 5003:5003
     volumes:
-      - /home/ubuntu/pharmaceutical-product-lifecycle-solution/store:/robot_maintenance/store
+      - /home/ubuntu/AI-Hackathon/ai-super-reference-kit-2023/pharmaceutical_manufacturing_business/store:/robot_maintenance/store
     restart: on-failure
 
   supportbot_chatbot:
@@ -38,7 +38,7 @@ services:
     ports:
       - 5004:5004
     volumes:
-      - /home/ubuntu/pharmaceutical-product-lifecycle-solution/store:/supportbot_chatbot/store
+      - /home/ubuntu/AI-Hackathon/ai-super-reference-kit-2023/pharmaceutical_manufacturing_business/store:/supportbot_chatbot/store
     restart: on-failure
 
   app_frontend:
@@ -48,7 +48,7 @@ services:
     ports:
       - 5005:5005
     volumes:
-      - /home/ubuntu/pharmaceutical-product-lifecycle-solution/store:/app_frontend/store
+      - /home/ubuntu/AI-Hackathon/ai-super-reference-kit-2023/pharmaceutical_manufacturing_business/store:/app_frontend/store
     restart: on-failure
 
 

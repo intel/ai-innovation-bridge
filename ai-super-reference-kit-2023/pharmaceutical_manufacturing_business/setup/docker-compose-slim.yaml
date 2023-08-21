@@ -8,7 +8,7 @@ services:
     ports:
       - 5001:5001
     volumes:
-      - /home/ubuntu/hwi_818/store:/medication_demand_forecast/store
+      - /home/ubuntu/AI-Hackathon/ai-super-reference-kit-2023/pharmaceutical_manufacturing_business/store:/medication_demand_forecast/store
     restart: on-failure
 
   robot_maintenance:
@@ -18,7 +18,7 @@ services:
     ports:
       - 5003:5003
     volumes:
-      - /home/ubuntu/hwi_818/store:/robot_maintenance/store
+      - /home/ubuntu/AI-Hackathon/ai-super-reference-kit-2023/pharmaceutical_manufacturing_business/store:/robot_maintenance/store
     restart: on-failure
 
   app_frontend:
@@ -28,5 +28,5 @@ services:
     ports:
       - 5005:5005
     volumes:
-      - /home/ubuntu/hwi_818/store:/app_frontend/store
+      - /home/ubuntu/AI-Hackathon/ai-super-reference-kit-2023/pharmaceutical_manufacturing_business/store:/app_frontend/store
     restart: on-failure

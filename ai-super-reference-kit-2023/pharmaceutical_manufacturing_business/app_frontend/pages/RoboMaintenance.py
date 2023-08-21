@@ -15,10 +15,7 @@ with app_tab:
         image = Image.open('./assets/robot_arm.png')
         st.image(image)
     with col22:
-        st.markdown("##### Introducing our cutting-edge predictive maintenance tool that harnesses the power of \
-        Intel oneDAL tool on Xeon CPUs to accelerate XGBoost inference. By leveraging advanced acceleration \
-            techniques, our tool enables accurate prediction of maintenance needs, helping you proactively \
-                address issues before breakdowns occur, ensuring uninterrupted operations and optimized maintenance schedules.")
+        st.markdown("##### The demand predictive asset maintenance component uses an XGBoost classifier to flag assets that need maintenance. It leverages the Intel® Extension for Scikit-Learn, XGBoost, and daal4py on Intel® 4th Generation Xeon® Scalable processors.")
 
     st.divider()
     

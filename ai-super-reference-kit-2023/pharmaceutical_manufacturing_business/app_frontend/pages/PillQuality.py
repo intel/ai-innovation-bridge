@@ -17,7 +17,7 @@ with vino_tab:
         image = Image.open('./assets/qaqc.png')
         st.image(image)
     with col22:
-        st.markdown("##### Text for Anomalib goes here")
+        st.markdown("##### The generative AI chatbot component uses a GPT4all-J LLM and Retrieval Augmented Generation (RAG) to respond to queries associated with fictitious robotic maintenance scenarios. It leverages the PyTorch 2.0, LangChain, and Hugging Face Transformers on Intel® 4th Generation Xeon® Scalable processors.")
 
     st.divider()
     
@@ -162,26 +162,4 @@ with ipex_tab:
             
     
 with help_tab:
-    st.markdown("#### Training Input Descriptions:")
-    st.markdown("- Root Training Data Folder: N/A")
-    st.markdown("- Save Model Path: N/A")
-    st.markdown("- Passing Quality Label: N/A")
-    st.markdown("#### OpenVINO Inference Input Descriptions:")
-    st.markdown("- Root Store: N/A")
-    st.markdown("- Trained Model Path: N/A")
-    st.markdown("- Inference Batch Size: N/A")
-    st.markdown("#### Code Samples:")
-    
-    st.markdown("##### Enabling Intel Extension for Pytorch Accelerations")
-    ipex_code = '''model, optimizer = ipex.optimize(model=self.model, optimizer=optimizer, dtype=torch.float32)'''
-    st.code(ipex_code, language='python')
-    
-    st.markdown("##### Inference with OpenVINO")
-    daalxgboost_code = ''' '''
-    st.code(daalxgboost_code, language='python')
-    
-    st.markdown('[Visit GitHub Repository for Source Code](https://github.com/intel/AI-Hackathon)')
-    
-    
-    
-    
+    st.markdown("#### Coming Soon!")

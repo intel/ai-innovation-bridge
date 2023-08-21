@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 import requests
 
-st.title('Medication Demand Forecaster')
+st.title('Medication Demand Forecasting')
 
 app_tab, help_tab = st.tabs(["Application", "Help"])
 
@@ -14,7 +14,7 @@ with app_tab:
         image = Image.open('./assets/forecasting.png')
         st.image(image)
     with col22:
-        st.markdown("##### ")
+        st.markdown("##### The demand forecasting component uses a time series prediction CNN-LSTM model to predict the demand for multiple products across multiple locations. It leverages the Intel® Extensions for TensorFlow on Intel® 4th Generation Xeon® Scalable processors.")
 
     st.divider()
     
@@ -79,36 +79,8 @@ with app_tab:
 # Help tab frontend below
     
 with help_tab:
-    st.markdown("#### Input Descriptions:")
-    st.markdown("- Manufacturer: Provide the name of the manufacturer of the robotic arm")
-    st.markdown("- Model: Specify the model or specific type of the robotic arm. ")
-    st.markdown("- Lubrication Type: Indicate the type of lubrication used in the robotic arm.")
-    st.markdown("- Pill Type: Specify the type or category that the robotic arm is assigned to")
-    st.markdown("- Age of the Machine: Enter the age or duration of use of the robotic arm.")
-    st.markdown("- Motor Current: Provide the current reading from the motor of the robotic arm. ")
-    st.markdown("- Temperature of Sensors: Specify the temperature readings from the sensors installed on the robotic arm.")
-    st.markdown("- Number of Historic Repairs: Enter the total number of repairs or maintenance activities performed on the robotic arm in the past. ")
-    st.markdown("- Last Maintenance Date: Provide the date of the last maintenance activity performed on the robotic arm.")
-    st.markdown("#### Code Samples:")
-    
-    st.markdown("##### Conversion of XGBoost to Daal4py Model")
-    daalxgboost_code = '''xgb_model = xgb.train(self.parameters, xgb_train, num_boost_round=100)
-        self.d4p_model = d4p.get_gbt_model_from_xgboost(xgb_model)'''
-    st.code(daalxgboost_code, language='python')
-    
-    st.markdown("##### Inference with Daal4py Model")
-    daalxgboost_code = '''
-    daal_predict_algo = d4p.gbt_classification_prediction(
-            nClasses=num_class,
-            resultsToEvaluate="computeClassLabels",
-            fptype='float')
-            
-    daal_prediction = daal_predict_algo.compute(data, daal_model)
-    '''
-    st.code(daalxgboost_code, language='python')
-    
-    st.markdown('[Visit GitHub Repository for Source Code](https://github.com/intel/AI-Hackathon)')
-    
+    st.markdown("#### Coming Soon!")
+
     
     
     

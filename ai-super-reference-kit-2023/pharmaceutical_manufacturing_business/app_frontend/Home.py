@@ -2,16 +2,11 @@ import streamlit as st
 from PIL import Image
 
 
-st.title('How its made with...')
+st.title('AI Super Reference Kits')
 image = Image.open('./assets/intel-logo.png')
 st.image(image, width=500)
-st.header('Pharmaceutical Product Lifecycle Solution')
-st.markdown('This “How its made with Intel” comprises four distinct product \
-    lifecycle components that have been re-imagined – transforming them from \
-        legacy to machine learning solutions powered by Intel hardware and software \
-            components. The enabling technology stack includes components from across \
-                Intel’s software and hardware portfolio with careful adaptions to enable\
-                    this Pharmaceutical specific use case.')
+st.header('Pharmaceutical Manufacturing Business')
+st.markdown('AI Super Reference Kits comprise distinct product lifecycle components that have been re-imagined – transforming them from legacy to machine learning solutions powered by the Intel hardware and software AI stack. The enabling technology stack includes components across Intel’s software and hardware portfolio. Each lifecycle component starts with an AI Reference Kit that has been refactored to enable a pseudo-microservice architecture, making them easier to integrate into more complex applications. The integration of multiple kits, showcases how an integrated optimized solution could be made with intel components to address a particular industry challenge.')
 
 st.divider()
 
