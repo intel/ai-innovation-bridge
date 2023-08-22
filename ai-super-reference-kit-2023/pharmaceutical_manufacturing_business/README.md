@@ -18,6 +18,8 @@ A few benefits of the super kits include:
 
 The AI Super Reference Kit titled "Pharmaceuticals Manufacturing Business" integrates cutting-edge tools to streamline and enhance pharmaceutical production processes. Firstly, its demand forecasting module employs a time series prediction CNN-LSTM model optimized for Intel® 4th Generation Xeon® Scalable processors using Intel® Extensions for TensorFlow, ensuring accurate demand projections for various products across multiple locales. In tandem, a predictive asset maintenance system utilizes an XGBoost classifier with the Intel® Extension for Scikit-Learn to preemptively flag equipment in need of service. Visual anomaly detection capabilities, based on VGG-16 or Padim models, are embedded to quickly determine product quality via visual inspection, leveraging technologies such as OpenVINO and Anomalib. Complementing these is a generative AI chatbot, powered by GPT4all-J LLM and RAG, tailored for interactions related to fictitious robotic maintenance situations. All components are adeptly optimized for the Intel® 4th Generation Xeon® Scalable processors, demonstrating the convergence of AI innovation and pharmaceutical manufacturing.
 
+Deployment Instructions: [Deployment Instructions](setup)
+
 ![image](https://github.com/intel/AI-Hackathon/assets/57263404/5de0a90b-a22c-43c1-946f-1732e489015f)
 
 
