@@ -59,7 +59,13 @@ configure-pills-mvtec:
 launch-full: setup-store-full create-synthethic-data configure-pills-mvtec
 	docker-compose -f docker-compose-full.yaml -p full up
 
+launch-full-nodata:
+	docker-compose -f docker-compose-full.yaml -p full up
+
 launch-slim: setup-store-slim create-synthethic-data
+	docker-compose -f docker-compose-slim.yaml -p slim up
+
+launch-slim-nodata: 
 	docker-compose -f docker-compose-slim.yaml -p slim up
 
 shutdown-full:

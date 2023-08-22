@@ -94,4 +94,4 @@ async def predict(payload:PredictionPayload_IPEX):
     return {"msg": "Model Inference Complete", "Prediction Output": list(zip(y_pred_blind,file_list))} 
 
 if __name__ == "__main__":
-    uvicorn.run("serve:app", host="0.0.0.0", port=5001, log_level="info")
+    uvicorn.run("serve:app", host="0.0.0.0", port=5002, log_level="info")

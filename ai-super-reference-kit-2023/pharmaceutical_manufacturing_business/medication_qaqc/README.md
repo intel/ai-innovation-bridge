@@ -2,7 +2,7 @@
 
 The generative AI chatbot component uses a GPT4all-J LLM and Retrieval Augmented Generation (RAG) to respond to queries associated with fictitious robotic maintenance scenarios.  It leverages the PyTorch 2.0, LangChain, and Hugging Face Transformers on Intel® 4th Generation Xeon® Scalable processors. 
 
-![image](https://github.com/intel-innersource/frameworks.ai.ai-hackathon/assets/57263404/8a5c485d-b2b4-46d8-85c7-1349c7dc20f7)
+![image](https://github.com/intel/AI-Hackathon/assets/57263404/b0b06a1d-ea44-4154-a387-368f5088e380)
 
 ## Additional Resources
 

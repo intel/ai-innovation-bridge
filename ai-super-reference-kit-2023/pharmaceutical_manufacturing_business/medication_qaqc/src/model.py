@@ -9,7 +9,7 @@ class TrainPayload_IPEX(BaseModel):
     data_folder: str=None
     neg_class: int
     modeldir: str=None
-    learning_rate: int
+    learning_rate: float
     epochs: int
     data_aug: int
     

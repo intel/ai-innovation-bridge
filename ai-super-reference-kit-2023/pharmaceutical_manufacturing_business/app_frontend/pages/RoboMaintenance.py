@@ -21,9 +21,9 @@ with app_tab:
     
     st.markdown('#### Predictive Maintenance Model Training')
     
-    data_file = st.text_input('Training Data File Path',key='data')
-    model_name = st.text_input('Model Name',key='model name', help='The name of the model without extensions')
-    model_path = st.text_input('Model Save Path',key='model path', help='Provide the path without file name')
+    data_file = st.text_input('Training Data File Path',key='data', value='./store/datasets/robot_maintenance/train.csv')
+    model_name = st.text_input('Model Name',key='model name', help='The name of the model without extensions', value='model')
+    model_path = st.text_input('Model Save Path',key='model path', help='Provide the path without file name', value='./store/models/robot_maintenance/')
     test_size = st.slider('Percentage of data saved for Testing',min_value=5, max_value=50, value=25, step=5)
     
     
@@ -47,7 +47,7 @@ with app_tab:
     
     st.markdown('#### Predictive Maintenance Analysis')
     
-    selected_model_path = st.text_input('Selected Model Path',key='model path selection')
+    selected_model_path = st.text_input('Selected Model Path',key='model path selection', value='./store/models/robot_maintenance/model.joblib')
 
     col21, col22, col23 = st.columns(3)
 
@@ -119,7 +119,3 @@ with help_tab:
     st.code(daalxgboost_code, language='python')
     
     st.markdown('[Visit GitHub Repository for Source Code](https://github.com/intel/AI-Hackathon)')
-    
-    
-    
-    

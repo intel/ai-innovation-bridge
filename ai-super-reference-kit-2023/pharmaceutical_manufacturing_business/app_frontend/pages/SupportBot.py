@@ -18,7 +18,7 @@ st.divider()
 
 st.markdown('#### Configure SupportBot')
 
-data = st.text_input('Similiary Search Document Path', help='If running the solution as-is, this is the path to the volume bind ./store/datasets/supportbot_chatbot/dialogue.txt')
+data = st.text_input('Similiary Search Document Path', value='./store/datasets/supportbot_chatbot/dialogues.txt')
 
 st.divider()
     

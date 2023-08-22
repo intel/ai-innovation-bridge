@@ -17,6 +17,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - 5002:5002
+    shm_size: '20gb'
     volumes:
       - /home/ubuntu/AI-Hackathon/ai-super-reference-kit-2023/pharmaceutical_manufacturing_business/store:/medication_qaqc/store
     restart: on-failure

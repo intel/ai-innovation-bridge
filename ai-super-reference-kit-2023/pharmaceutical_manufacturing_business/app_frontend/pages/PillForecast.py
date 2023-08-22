@@ -20,12 +20,12 @@ with app_tab:
     
     st.markdown('#### Demand Forecasting Model Training')
     
-    data_file = st.text_input('Training Data File Path',key='data')
+    data_file = st.text_input('Training Data File Path',key='data', value='./store/datasets/medication_demand_forecast/train.csv')
     window_size = st.number_input('Window', min_value=50, max_value=200, value=125,step=5)
     lag_size = st.slider('Lagging Window',min_value=5, max_value=50, value=25, step=5)
     epochs = st.number_input('Epochs',min_value=1, max_value=100, step=1, value=5 )
     batch_size = st.number_input('Batch Size',min_value=100, max_value=1000, step=1, value=512 )
-    model_path = st.text_input('Model Save Path',key='model path')
+    model_path = st.text_input('Model Save Path',key='model path', value='./store/models/medication_demand_forecast/model.pb')
     test_size = st.slider('Percentage of data saved for Testing',min_value=0.10, max_value=0.90, value=0.30, step=.05)
     
     
@@ -52,9 +52,9 @@ with app_tab:
     col21, col22, col23 = st.columns(3)
 
     # inference inputs
-    selected_model_path = st.text_input('Selected Model Path', key='demand forecaster model')
-    analysis_save_path = st.text_input('Forecast Demand Analysis Save Path')
-    input_data = st.text_input('Input Data Path')
+    selected_model_path = st.text_input('Selected Model Path', key='demand forecaster model', value='./store/models/medication_demand_forecast/model.pb')
+    analysis_save_path = st.text_input('Forecast Demand Analysis Save Path', value='./store/outputs/medication_demand_forecast/')
+    input_data = st.text_input('Input Data Path', value='./store/datasets/medication_demand_forecast/test.csv')
     inf_window_size = st.number_input('Window', min_value=50, max_value=200, value=125,step=5, key='demand forecaster window')
     inf_lag_size = st.slider('Lagging Window',min_value=5, max_value=50, value=25, step=5, key='demand forecaster lag window')
     inf_batch_size = st.number_input('Batch Size',min_value=100, max_value=1000, step=1, value=512, key='demand forecaster batch' )
@@ -80,7 +80,3 @@ with app_tab:
     
 with help_tab:
     st.markdown("#### Coming Soon!")
-
-    
-    
-    

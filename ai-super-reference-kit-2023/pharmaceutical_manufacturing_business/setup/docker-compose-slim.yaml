@@ -1,16 +1,6 @@
 version: '3'
 services:
 
-  medication_demand_forecast:
-    build:
-      context: ../medication_demand_forecast/
-      dockerfile: Dockerfile
-    ports:
-      - 5001:5001
-    volumes:
-      - /home/ubuntu/AI-Hackathon/ai-super-reference-kit-2023/pharmaceutical_manufacturing_business/store:/medication_demand_forecast/store
-    restart: on-failure
-
   robot_maintenance:
     build:
       context: ../robot_maintenance/

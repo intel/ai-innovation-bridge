@@ -23,10 +23,10 @@ with vino_tab:
     
     st.markdown('#### Anomalib Model Training with PyTorch Lightning')
 
-    data_path = st.text_input('Path to Pill Data Folder')
-    modeldir = st.text_input('Path to Save Model')
+    data_path = st.text_input('Path to Pill Data Folder', value='./store/datasets/medication_qaqc/')
+    modeldir = st.text_input('Path to Save Model', value='./store/models/medication_qaqc/')
     model = st.text_input('Foundation Model Options', value = "resnet18", help = "Use resnet18 to get started, review Anomalib docs more.")
-    batch_size = st.number_input('Passing Quality Label', value= 32, min_value=8,max_value=512)
+    batch_size = st.number_input('Batch Size', value= 32, min_value=8,max_value=512)
     n_threads = st.number_input('Threads', value = 4, min_value=1,max_value=96)
     img_size = st.number_input('Image Size', value=256, min_value=16)
     layers = st.multiselect('Neural Network Layers', options = ["layer1", "layer2", "layer3"])
@@ -55,9 +55,9 @@ with vino_tab:
     image_path: str=None
     device: str = "CPU"
     
-    openvino_model_path = st.text_input('OpenVINO model path')
-    metadata_path = st.text_input('OpenVINO metada')
-    image_path = st.text_input('Path to Target Image')
+    openvino_model_path = st.text_input('OpenVINO model path', value='./store/models/medication_qaqc/weights/openvino/model.bin')
+    metadata_path = st.text_input('OpenVINO metadata', value='./store/models/medication_qaqc/weights/openvino/metadata.json')
+    image_path = st.text_input('Path to Target Image', value='./store/datasets/medication_qaqc/data/test/bad/012.png')
     device = st.text_input('Target Device', value= 'CPU')
     
     if st.button('Start Inference', key='openvino inference'):
@@ -67,10 +67,6 @@ with vino_tab:
         DATA = {"openvino_model_path":openvino_model_path,"metadata_path":metadata_path,
                 "image_path":image_path, "device":device}
         INFERENCE_RESPONSE = requests.post(url = URL, json = DATA)
-        
-        import pdb
-        
-        pdb.set_trace()
 
         if len(INFERENCE_RESPONSE.text) < 40:       
             st.error("Inference Failed")
@@ -101,8 +97,8 @@ with ipex_tab:
     
     st.markdown('#### Visual QA/QC Model Training')
 
-    data_folder = st.text_input('Root Training Data Folder')
-    model_path = st.text_input('Save Model Path')
+    data_folder = st.text_input('Root Training Data Folder', value='./store/datasets/medication_qaqc/data/')
+    model_path = st.text_input('Save Model Path', value='./store/models/medication_qaqc/model_ipex.h5')
     neg_class = st.number_input('Passing Quality Label',min_value=0,max_value=100)
     learning_rate = st.slider('Learning Rate',min_value=0.0001, max_value=0.05, step=.0001, value=.025, format='%f')
     epochs = st.number_input('Epochs',min_value=1, max_value=100, step=1, value=5 )
@@ -111,7 +107,7 @@ with ipex_tab:
     if st.button('Train Model', key='ipex training'):
         # build request
 
-        URL = 'http://medication_qaqc:5002/train-openvino'
+        URL = 'http://medication_qaqc:5002/train-ipex'
         DATA = {"data_folder":data_folder,"neg_class":neg_class,"modeldir":model_path, 
                 "learning_rate": learning_rate, "epochs": epochs, "data_aug":data_aug}
         TRAINING_RESPONSE = requests.post(url = URL, json = DATA)
@@ -127,14 +123,14 @@ with ipex_tab:
     
     st.markdown('#### Intel Extension for PyTorch Inference')
     
-    data_folder = st.text_input('Root Store')
-    trained_model_path = st.text_input('Trained Model Path')
+    data_folder = st.text_input('Root Store', value='./store/datasets/medication_qaqc/data/')
+    trained_model_path = st.text_input('Trained Model Path', value='./store/models/medication_qaqc/model_ipex.h5')
     batch_size = st.number_input('Inference Batch Size',min_value=5,max_value=100)
     
     if st.button('Start Batch Evaluation', key='ipex inference'):
         
         # build request
-        URL = 'http://medication_qaqc:5002/predict-openvino'
+        URL = 'http://medication_qaqc:5002/predict-ipex'
         DATA = {"trained_model_path":trained_model_path,"data_folder":data_folder,"batch_size":batch_size}
         INFERENCE_RESPONSE = requests.post(url = URL, json = DATA)
 

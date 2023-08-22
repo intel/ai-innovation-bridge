@@ -1,4 +1,4 @@
-FROM public.ecr.aws/docker/library/python:3.8
+FROM public.ecr.aws/docker/library/python:3.10.12
 
 # copy assets over to image
 COPY /src /medication_qaqc
@@ -16,7 +16,7 @@ libxext6
 RUN pip3 install --user --no-cache-dir -r requirements.txt
 
 # set PATH
-ENV PATH=.local/bin:$PATH
+ENV PATH=/root/.local/bin:$PATH
 
 # exposing endpoint port
 EXPOSE 5002
