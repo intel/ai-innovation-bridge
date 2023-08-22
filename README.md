@@ -8,4 +8,4 @@ Welcome to the Intel<sup>&reg;</sup> AI Hackathon repo! This repo contains noteb
     - [Machine Learning (ML) Track](innovation-hackathon/machine-learning-track)
     - [Natural Language Processing (NLP) Track](innovation-hackathon/natural-language-processing-track)
 - [Intel<sup>&reg;</sup> AI Startup Olympics - Blueprint Sample Code](ai-startup-olympics-2023)
-- [Intel<sup>&reg;</sup> Innovation 2022 AI Hackathon](ai-super-reference-kit-2023)
+- [Intel<sup>&reg;</sup> AI Super Reference Kit](ai-super-reference-kit-2023)
