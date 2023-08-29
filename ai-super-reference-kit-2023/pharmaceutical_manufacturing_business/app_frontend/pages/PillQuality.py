@@ -17,7 +17,7 @@ with vino_tab:
         image = Image.open('./assets/qaqc.png')
         st.image(image)
     with col22:
-        st.markdown("##### The generative AI chatbot component uses a GPT4all-J LLM and Retrieval Augmented Generation (RAG) to respond to queries associated with fictitious robotic maintenance scenarios. It leverages the PyTorch 2.0, LangChain, and Hugging Face Transformers on Intel® 4th Generation Xeon® Scalable processors.")
+        st.markdown("##### The visual anomaly detection component uses a binary classification computer vision model based on VGG-16 or Padim to produce a flag if the product passes or fails visual inspection.  It leverages the OpenVINO, Anomalib, Intel® Extension for PyTorch*, and  Hugging Face Transformers on Intel® 4th Generation Xeon® Scalable processors OR Intel ARC GPUs. ")
 
     st.divider()
     
@@ -86,11 +86,7 @@ with ipex_tab:
         image = Image.open('./assets/qaqc.png')
         st.image(image)
     with col22:
-        st.markdown("##### Presenting our advanced visual quality control tool that leverages Intel\
-            Extension for PyTorch to fine-tune a model for detecting faulty pills in the production line.\
-                With the added power of Xeon CPUs and collaboration with OpenVINO, our tool ensures efficient\
-                    inference at the edge, enabling real-time identification of defective pills for enhanced\
-                        quality control in manufacturing processes.")
+        st.markdown("##### The visual anomaly detection component uses a binary classification computer vision model based on VGG-16 or Padim to produce a flag if the product passes or fails visual inspection.  It leverages the OpenVINO, Anomalib, Intel® Extension for PyTorch*, and  Hugging Face Transformers on Intel® 4th Generation Xeon® Scalable processors OR Intel ARC GPUs. ")
 
 
     st.divider()

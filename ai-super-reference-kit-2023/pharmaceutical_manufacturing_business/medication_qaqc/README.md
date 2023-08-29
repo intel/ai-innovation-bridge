@@ -1,6 +1,5 @@
 ## Visual Anomaly Detection
-
-The generative AI chatbot component uses a GPT4all-J LLM and Retrieval Augmented Generation (RAG) to respond to queries associated with fictitious robotic maintenance scenarios.  It leverages the PyTorch 2.0, LangChain, and Hugging Face Transformers on Intel® 4th Generation Xeon® Scalable processors. 
+The visual anomaly detection component uses a binary classification computer vision model based on VGG-16 or Padim to produce a flag if the product passes or fails visual inspection.  It leverages the OpenVINO, Anomalib, Intel® Extension for PyTorch*, and  Hugging Face Transformers on Intel® 4th Generation Xeon® Scalable processors OR Intel ARC GPUs. 
 
 ![image](https://github.com/intel/AI-Hackathon/assets/57263404/b0b06a1d-ea44-4154-a387-368f5088e380)
 

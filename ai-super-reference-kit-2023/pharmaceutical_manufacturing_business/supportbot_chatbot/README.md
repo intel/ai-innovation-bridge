@@ -1,5 +1,5 @@
 ## Healthcare ChatBot Lifecycle Component
-The Healthcare ChatBot component "MedBot" is a generative AI question-answering model based on the open-source LLM, gpt4all-j. The performance of this model is augmented by leveraging a similarity search and prompt injection through the Langchain library. 
+The generative AI chatbot component uses a GPT4all-J LLM and Retrieval Augmented Generation (RAG) to respond to queries associated with fictitious robotic maintenance scenarios.  It leverages the PyTorch 2.0, LangChain, and Hugging Face Transformers on Intel® 4th Generation Xeon® Scalable processors. 
 
 ![image](https://github.com/intel/AI-Hackathon/assets/57263404/b414f62b-e5ec-42cf-a273-29ba25f7a8aa)
 
