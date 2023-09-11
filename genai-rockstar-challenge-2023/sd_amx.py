@@ -73,7 +73,8 @@ def run_stable_diffusion(
     
     inference_time = (end_time - start) / num_images
     print(f'inference_time = {inference_time}')  
-    return save_path
+    # Return the image URL and the inference time
+    return save_path,inference_time
 
 # output_image = run_stable_diffusion(
 #     model_id =  "runwayml/stable-diffusion-v1-5",
