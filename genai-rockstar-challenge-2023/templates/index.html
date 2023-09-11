@@ -36,11 +36,16 @@
         <br><br>
         <button id="generate-button" type="submit">Generate Image</button>
     </form>
-    <div id="generated-image">
+    <div id="generated-image" style="display: flex; justify-content: center; align-items: center;">
         {% if generated_image_url %}
-        <img src="{{ generated_image_url }}" alt="Generated Image">
+        <img src="{{ generated_image_url }}" alt="{{ inference_time }}" title="{{ inference_time }}">
         {% endif %}
     </div>
+    <p style="color: green;">
+        {% if generated_image_url %}
+        Inference time is seconds: {{ inference_time }}
+        {% endif %}
+    </p>
     
     <script>
         // JavaScript to handle UI interactions
@@ -61,7 +66,7 @@
             // Replace this with your stable diffusion code logic
             // Generate and return the image URL
             // Example:
-            const imageUrl = 'path_to_generated_image.jpg';
+            const imageUrl = 'https://www.intel.com/content/dam/support/us/en/multimedia/images_common/intel-loading.gif';
             return imageUrl;
         }
     </script>
