@@ -5,7 +5,7 @@ app = Flask(__name__, static_folder = 'output_images')
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    generated_image_url = 'https://www.intel.com/content/dam/www/global/badges/xeon-platinum-processors-framed-badge-rwd.jpg.rendition.intel.web.480.270.jpg'
+    generated_image_url = 'https://www.intel.com/content/dam/www/central-libraries/us/en/images/xeon-scalable-processors-family-framed-badge.jpg.rendition.intel.web.480.270.jpg'
     inference_time = None
     if request.method == 'POST':
         prompt = request.form['prompt']
