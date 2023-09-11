@@ -26,7 +26,7 @@ def run_stable_diffusion(
     model_id: str = "runwayml/stable-diffusion-v1-5",
     device: str = 'cpu',
     torch_dtype: torch.dtype = torch.bfloat16,
-    num_inference_steps: int = 5,
+    num_inference_steps: int = 10,
     num_images: int = 1,
     output_folder: str = 'output_images'
     ):
