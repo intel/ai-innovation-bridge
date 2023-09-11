@@ -1,0 +1,13 @@
+#cloud-config
+package_update: true
+package_upgrade: true
+
+package:
+  - git
+
+ansible:
+  install_method: distro
+  package_name: ansible
+  pull:
+    url: "https://github.com/intel/optimized-cloud-recipes.git"
+    playbook_name: "recipes/ai-fastchat-amx-ubuntu/recipe.yml"
