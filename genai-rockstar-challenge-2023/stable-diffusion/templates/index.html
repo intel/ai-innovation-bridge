@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stable Diffusion Code</title>
+    <style>
+        /* Add your CSS styles here to customize the UI */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #prompt-input {
+            width: 80%;
+            padding: 10px;
+        }
+        #generate-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        #generated-image {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stable Diffusion on Intel 4th Gen Xeon CPU</h1>
+    <form method="POST" action="/">
+        <p>Enter a prompt:</p>
+        <input type="text" id="prompt-input" name="prompt" placeholder="Enter your prompt here" value="{{ prompt|default('') }}">
+        <br><br>
+        <button id="generate-button" type="submit">Generate Image</button>
+    </form>
+    <div id="generated-image">
+        {% if generated_image_url %}
+        <img src="{{ generated_image_url }}" alt="Generated Image">
+        {% endif %}
+    </div>
+    
+    <script>
+        // JavaScript to handle UI interactions
+        const promptInput = document.getElementById('prompt-input');
+        const generateButton = document.getElementById('generate-button');
+        const generatedImage = document.getElementById('generated-image');
+
+        generateButton.addEventListener('click', () => {
+            const prompt = promptInput.value;
+            // Call your stable diffusion function here with the provided prompt
+            // Replace the following line with your actual function call and image display logic
+            const generatedImageUrl = generateImage(prompt);
+            generatedImage.innerHTML = `<img src="${generatedImageUrl}" alt="Generated Image">`;
+        });
+
+        // Function to call your stable diffusion code and return the generated image URL
+        function generateImage(prompt) {
+            // Replace this with your stable diffusion code logic
+            // Generate and return the image URL
+            // Example:
+            const imageUrl = 'path_to_generated_image.jpg';
+            return imageUrl;
+        }
+    </script>
+</body>
+</html>

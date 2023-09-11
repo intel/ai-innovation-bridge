@@ -1,39 +1,52 @@
-# Stable Diffusion on Intel 4th Gen Xeon CPUs
-Simple Stable Diffusion app using Flask
+# Intel Generative AI Rockstar Challenge
 
-## Prerequisites, assumes running on Ubuntu 22.04
+![Generative AI Rockstar](images/ai-rockstar.png)
 
-```bash
+## Agenda
 
-# Linux packages
-sudo apt update
-sudo apt-get -y install python3-pip python-is-python3 git
+- Introduction to the Intel Generative AI Rockstar Challenge
+- Quick review of the [Guidelines](guidelines.md)
+- Quick review of what we are providing and the flow
 
-# Git clone repository 
-git clone https://github.com/intel/AI-Hackathon.git
+## Judging Criteria
 
-# Enter directory
-cd AI-Hackathon/genai-rockstar-challenge-2023
+- 20 points for style
+- 20 points for humor
+- 40 points for use of technology (AMX, advanced models, etc)
+- 20 points for the use of technology in an unexpected way
 
-# Python requirements.txt
-pip3 install -r requirements.txt
-```
+**Send your submissions via email to the address provided by on site staff.**
 
-## Run application locally
+## Environment
 
-```bash 
-python3 app.py
-```
+We will provide each team one M7i.4xlarge instance on AWS. These instances use the latest [Intel 4th Generation Xeon CPUs](https://www.intel.com/content/www/us/en/products/docs/processors/xeon-accelerated/4th-gen-xeon-scalable-processors.html), which include new accelerators that help speed up AI and other workloads. This event will focus on taking advantage of the [Intel AMX](https://www.intel.com/content/www/us/en/products/docs/accelerator-engines/advanced-matrix-extensions/overview.html) accelerator to do AI inferencing on CPUs.
 
-## Browse to your web UI 
+These VMs will already be provisioned for you and will include a few components already installed and configured. You will have the opportunity to experiment with additional models or other settings as part of the workshop.
 
-### Open a browser navigate to your **VM's Public IP address** on port 5000. For example:  
+### Pre-Installed Components
 
-```
-40.41.42.43:5000
-```
+- [Intel Optimized Cloud Recipes](https://github.com/intel/optimized-cloud-recipes)
+- [Intel Extension for PyTorch](https://github.com/intel/intel-extension-for-pytorch)
+- [FastChat](https://github.com/lm-sys/FastChat)
 
-### Your Browser should display the following prompt. Enter a prompt and wait for the results.  
+We have used one of the new [Intel Cloud Optimization Modules](https://www.intel.com/content/www/us/en/developer/topic-technology/cloud-optimization.html) to provision the VMs for this exercise. For this event, we are using the [AWS VM Module](https://github.com/intel/terraform-intel-aws-vm).
 
-<img width="961" alt="image" src="https://github.com/bconsolvo/stable_diffusion_flask/assets/15691316/5f6ad3b7-f6db-4acb-b0f7-825364c54387">
+---
 
+## Competition Flow
+
+### Create Song Lyrics
+
+The first part of the competition will have you generate song lyrics for your album. The lyrics shouldn't be overly long but should match the theme you want for your album.
+
+**[Song Lyric Instructions](lyrics.md)**
+
+### Create Album Cover
+
+The second part of the competition will have a generate an album cover that goes along with your song lyrics. Refer to the [Guidelines](guidelines.md) to make sure your image follows those guidelines.
+
+**[Album Cover Instructions](album.md)
+
+## Submission for Competition
+
+Refer to each of the guides for what you will need to collect and submit to be entered in the competition.
