@@ -1,10 +1,9 @@
-torch
-torchvision 
-torchaudio
-transformers
 intel_extension_for_pytorch
 diffusers
 typing 
 pathlib 
 flask
-
+torch
+torchvision 
+torchaudio
+transformers
