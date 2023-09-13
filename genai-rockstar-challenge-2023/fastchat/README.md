@@ -29,7 +29,9 @@ ubuntu@ip-172-31-33-45:~$ source /usr/local/bin/run_demo.sh
 2023-09-06 14:10:02 | INFO | stdout | This share link expires in 72 hours. For free permanent hosting and GPU upgrades, run `gradio deploy` from Terminal to deploy to Spaces (https://huggingface.co/spaces)
 ```
 
-Open a browser and go to the public URL listed. This URL is randomly generated each time the script is run. If you having trouble accessing the public URL, or you get errors while using FastChat, then try going to `http://public_ip:7860`.
+Open a browser and go to the public URL listed. This URL is randomly generated each time the script is run. 
+
+**If you having trouble accessing the URL provided in the console, or the page is really slow to load, or you get errors while using FastChat, then try going to `http://public_ip:7860`.**
 
 Once you get to the application, you will see a screen like this:
 
@@ -69,7 +71,3 @@ The Force is strong, with our Jedi warriors
 ## Continue to Album Cover instructions
 
 **[Album Cover Instructions](../stable-diffusion/README.md)**
-
-## Advanced Options and Switching Models
-
-See this [page](TBD) for more information on switching models in FastChat.

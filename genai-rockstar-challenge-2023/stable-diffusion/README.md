@@ -7,76 +7,89 @@ You should recieve information about how to login to your assigned VM via the em
 - Login to the VM using the provided credentials
 - Run the following commands
 
+### Pre-requisites
+
 ```shell
-pip install diffusers
+git clone https://github.com/intel/AI-Hackathon.git
+cd AI-Hackathon/genai-rockstar-challenge-2023/stable-diffusion
+pip install -r requirements.txt
 ```
 
-Now copy the two Python scripts in the `stable-diffusion` directory on Github onto your AWS VM.
+### Using the app
 
-The `sd_amx.py` script will generate an image using Intel AMX and the `sd_noamx.py` script will generate an image without using Intel AMX.
+To start the app you run the following command:
 
-The images generated will be saved to the `output_images` on your AWS VM. You will need to download them in order to attach the image for your submission.
-
-Experiment with running your prompt using each script to see the impact that Intel AMX can have on how quickly an image is generated. Once you've explored the difference, you can focus on generating your album cover using the `sd_amx.py` script.
-
-## Adjusting Parameters
-
-To modify the prompt and other settings the impact the image generation, the main section of the script to pay attention to is at the end of the script. The below example is from the `sd_amx.py` script, but both scripts are similar.
-
-```python
-output_image = run_stable_diffusion(
-    model_id =  "runwayml/stable-diffusion-v1-5",
-    prompt = "giraffe climbing a mountain",
-    device = 'cpu',
-    torch_dtype = torch.bfloat16,
-    num_inference_steps = 25,
-    num_images = 1,
-    output_folder = 'output_images'
-)
-```
-
-To change your prompt, you'll want to modify the `prompt` setting. If you want to change the model, modify the `model_id` setting. If you want to increase the number of inference steps used to generate your image, modify the `num_inference_steps` settings.
-
-## Submitting Results
-
-For this portion of the challenge, you will need to copy the prompt and settings you used, the image generated and take a screenshot of the output on the console. Include these in your submission email. Examples are below. Don't send your submission until you've completed both parts of the challenge. The image you submit should've been generated using the `sd_amx.py` script.
-
-***For the prompt and settings***
-
-For the prompt and settings you can copy the section from the end of the `sd_amx.py` script that you used to create the album cover image. An example is below:
-
-```python
-output_image = run_stable_diffusion(
-    model_id =  "runwayml/stable-diffusion-v1-5",
-    prompt = "giraffe climbing a mountain",
-    device = 'cpu',
-    torch_dtype = torch.bfloat16,
-    num_inference_steps = 25,
-    num_images = 1,
-    output_folder = 'output_images'
-)
-```
-
-For the image, just attach the image you want to use as your album cover.
-
-
-# Stable Diffusion on Intel 4th Gen Xeon CPUs
-Simple Stable Diffusion app using Flask
-
-Run using 
-
-```python
+```shell
 python app.py
 ```
 
-Connect to your web UI with:
+If it is successful you will see the following on the console:
 
+```shell
+2023-09-13 21:53:34,161 - torch.distributed.nn.jit.instantiator - INFO - Created a temporary directory at /tmp/tmpz93u03rv
+2023-09-13 21:53:34,161 - torch.distributed.nn.jit.instantiator - INFO - Writing /tmp/tmpz93u03rv/_remote_module_non_scriptable.py
+ * Serving Flask app 'app'
+ * Debug mode: on
+2023-09-13 21:53:34,636 - werkzeug - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.87.3:5000
+2023-09-13 21:53:34,637 - werkzeug - INFO - Press CTRL+C to quit
+2023-09-13 21:53:34,637 - werkzeug - INFO -  * Restarting with stat
+2023-09-13 21:53:35,835 - torch.distributed.nn.jit.instantiator - INFO - Created a temporary directory at /tmp/tmpdo86ic3w
+2023-09-13 21:53:35,835 - torch.distributed.nn.jit.instantiator - INFO - Writing /tmp/tmpdo86ic3w/_remote_module_non_scriptable.py
+2023-09-13 21:53:36,293 - werkzeug - WARNING -  * Debugger is active!
+2023-09-13 21:53:36,294 - werkzeug - INFO -  * Debugger PIN: 833-138-988
 ```
-localhost:5000
+
+You can then access the UI for the application at `http://vmpublicip:5000`
+
+You should see a screen like this, which means you can now generate images.
+
+![Initial Stable Diffusion Screen](images/initial-screen.png)
+
+Notice that you can see how long the image takes to generate.
+
+## Adjusting Parameters
+
+If the application is running, then you can press `ctrl-c` to get it to stop. You can then adjust the settings for the application. To modify the settings, you'll need to edit the file `sd_amx.py` and look for this block of code.
+
+```python
+def run_stable_diffusion(
+    prompt: str,
+    model_id: str = "runwayml/stable-diffusion-v1-5",
+    device: str = 'cpu',
+    torch_dtype: torch.dtype = torch.bfloat16,
+    num_inference_steps: int = 10,
+    num_images: int = 1,
+    output_folder: str = 'output_images'
+    ):
 ```
 
-This is what the Web UI should look like:
+If you want to change the model, modify the `model_id` setting. If you want to increase the number of inference steps used to generate your image, modify the `num_inference_steps` settings. Increasing the number of inferencing steps will increase quality but also increase the time it takes to generate the image.
 
-<img width="961" alt="image" src="https://github.com/bconsolvo/stable_diffusion_flask/assets/15691316/5f6ad3b7-f6db-4acb-b0f7-825364c54387">
+### Turning Intel AMX On and Off
 
+By default this application is configured to use Intel AMX to accelerate image generation. To see the difference that Intel AMX has on how quickly images are generated, modify the variable `torch_dtype` from `torch.bfloat16` to `torch.float32` and restart the application `python app.py`. You will see a noticable increase in the time each image takes to generate.
 
+## Submitting Results
+
+For this portion of the challenge, you will need to copy the prompt you used, the image that was generated and the settings you used, the image generated. Include these in your submission email. Examples are below. Don't send your submission until you've completed both parts of the challenge. The image you submit should've been generated using Intel AMX.
+
+***For the prompt and settings***
+
+For the prompt and settings you can copy the section from the `sd_amx.py` script that you used to create the album cover image. An example is below:
+
+```python
+def run_stable_diffusion(
+    prompt: str,
+    model_id: str = "runwayml/stable-diffusion-v1-5",
+    device: str = 'cpu',
+    torch_dtype: torch.dtype = torch.bfloat16,
+    num_inference_steps: int = 10,
+    num_images: int = 1,
+    output_folder: str = 'output_images'
+    ):
+```
+
+For the image, attach the image that was generated.

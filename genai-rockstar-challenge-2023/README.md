@@ -45,7 +45,7 @@ The first part of the competition will have you generate song lyrics for your al
 
 The second part of the competition will have a generate an album cover that goes along with your song lyrics. Refer to the [Guidelines](guidelines.md) to make sure your image follows those guidelines.
 
-**[Album Cover Instructions](stable-diffusion/README.md)
+**[Album Cover Instructions](stable-diffusion/README.md)**
 
 ## Submission for Competition
 
