@@ -41,7 +41,7 @@ You can now generate the lyrics for your song.
 
 ## Submitting Results
 
-For this portion of the challenge, you will need to copy the prompt you used, the text output and take a screenshot of either the UI or the output on the console. Include these in your submission email. Examples are below. Don't send your submission until you've completed the second portion of the challenge.
+For this portion of the challenge, you will need to copy the prompt you used, the text output and take a screenshot of either the UI or the output on the console. Put the lyrics in a text file and use the title of your song as the name of the file. Upload all of these as part of your submission. Examples are below. Don't finalize your submission until you've completed the second portion of the challenge.
 
 **For the prompt and lyrics:**
 
