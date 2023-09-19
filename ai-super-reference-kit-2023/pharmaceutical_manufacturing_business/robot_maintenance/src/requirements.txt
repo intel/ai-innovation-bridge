@@ -1,8 +1,8 @@
-daal4py
-pydantic
-xgboost
-fastapi
-numpy
-pandas
-scikit-learn-intelex 
-uvicorn                                 
+daal4py==2023.1.0
+pydantic==2.0.3
+xgboost==2.0.0
+fastapi==0.103.1
+numpy==1.24.4
+pandas==2.0.3
+scikit-learn-intelex==2023.1.0
+uvicorn==0.23.2                                 
