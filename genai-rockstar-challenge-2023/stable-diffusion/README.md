@@ -74,7 +74,7 @@ By default this application is configured to use Intel AMX to accelerate image g
 
 ## Submitting Results
 
-For this portion of the challenge, you will need to copy the prompt you used, the image that was generated and the settings you used, the image generated. Include these in your submission email. Examples are below. Don't send your submission until you've completed both parts of the challenge. The image you submit should've been generated using Intel AMX.
+For this portion of the challenge, you will need to copy the prompt you used, the image that was generated, the settings you used, and the image generated. Include these in your submission. Examples are below. Don't finalize your submission until you've completed both parts of the challenge. The image you submit should've been generated using Intel AMX.
 
 ***For the prompt and settings***
 

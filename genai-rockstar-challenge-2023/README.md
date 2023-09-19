@@ -39,14 +39,16 @@ We have used one of the new [Intel Cloud Optimization Modules](https://www.intel
 
 The first part of the competition will have you generate song lyrics for your album. The lyrics shouldn't be overly long but should match the theme you want for your album.
 
-**[Song Lyric Instructions](lyrics.md)**
+**[Song Lyric Instructions](fastchat/README.md)**
 
 ### Create Album Cover
 
-The second part of the competition will have a generate an album cover that goes along with your song lyrics. Refer to the [Guidelines](guidelines.md) to make sure your image follows those guidelines.
+The second part of the competition will have a generate an album cover that goes along with your song lyrics. Refer to the [Official Rules](terms.md) to make sure your image follows those guidelines.
 
 **[Album Cover Instructions](stable-diffusion/README.md)**
 
 ## Submission for Competition
 
-Refer to each of the guides for what you will need to collect and submit to be entered in the competition.
+Refer to each of the guides for what you will need to collect and submit to be entered in the competition. So make your submission, you need to go to this site:
+
+**[Contest Submission](https://intelrockstar2023.s3.us-west-1.amazonaws.com/rockstars.html)**
