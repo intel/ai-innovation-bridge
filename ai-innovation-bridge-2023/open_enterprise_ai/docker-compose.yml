@@ -1,0 +1,81 @@
+services:
+  habanahack8280:
+    build:
+      context: .
+    command: /bin/bash -c "jupyter lab --port=8280 --ServerApp.ip=* --ServerApp.token=gaudi2hack0 --no-browser"
+    environment:
+      - HABANA_VISIBLE_DEVICES=0
+      - HABANA_VISIBLE_MODULES=6
+    runtime: habana
+    network_mode: host
+    ipc: host
+  habanahack8282:
+    build:
+      context: .
+    command: /bin/bash -c "jupyter lab --port=8282 --ServerApp.ip=* --ServerApp.token=gaudi2hack1 --no-browser"
+    environment:
+      - HABANA_VISIBLE_DEVICES=1
+      - HABANA_VISIBLE_MODULES=7
+    runtime: habana
+    network_mode: host
+    ipc: host
+  habanahack8285:
+    build:
+      context: .
+    command: /bin/bash -c "jupyter lab --port=8285 --ServerApp.ip=* --ServerApp.token=gaudi2hack2 --no-browser"
+    environment:
+      - HABANA_VISIBLE_DEVICES=2
+      - HABANA_VISIBLE_MODULES=4
+    runtime: habana
+    network_mode: host
+    ipc: host
+  habanahack8288:
+    build:
+      context: .
+    command: /bin/bash -c "jupyter lab --port=8288 --ServerApp.ip=* --ServerApp.token=gaudi2hack3 --no-browser"
+    environment:
+      - HABANA_VISIBLE_DEVICES=3
+      - HABANA_VISIBLE_MODULES=5
+    runtime: habana
+    network_mode: host
+    ipc: host
+  habanahack8290:
+    build:
+      context: .
+    command: /bin/bash -c "jupyter lab --port=8290 --ServerApp.ip=* --ServerApp.token=gaudi2hack4 --no-browser"
+    environment:
+      - HABANA_VISIBLE_DEVICES=4
+      - HABANA_VISIBLE_MODULES=2
+    runtime: habana
+    network_mode: host
+    ipc: host
+  habanahack8396:
+    build:
+      context: .
+    command: /bin/bash -c "jupyter lab --port=8396 --ServerApp.ip=* --ServerApp.token=gaudi2hack5 --no-browser"
+    environment:
+      - HABANA_VISIBLE_DEVICES=5
+      - HABANA_VISIBLE_MODULES=3
+    runtime: habana
+    network_mode: host
+    ipc: host
+  habanahack8301:
+    build:
+      context: .
+    command: /bin/bash -c "jupyter lab --port=8301 --ServerApp.ip=* --ServerApp.token=gaudi2hack6 --no-browser"
+    environment:
+      - HABANA_VISIBLE_DEVICES=6
+      - HABANA_VISIBLE_MODULES=0
+    runtime: habana
+    network_mode: host
+    ipc: host
+  habanahack8304:
+    build:
+      context: .
+    command: /bin/bash -c "jupyter lab --port=8304 --ServerApp.ip=* --ServerApp.token=gaudi2hack7 --no-browser"
+    environment:
+      - HABANA_VISIBLE_DEVICES=7
+      - HABANA_VISIBLE_MODULES=1
+    runtime: habana
+    network_mode: host
+    ipc: host
