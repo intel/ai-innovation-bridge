@@ -26,81 +26,86 @@ Change into the fastchat example folder
 cd terraform-intel-aws-vm/examples/gen-ai-fastchat
 ```
 
+Run the Terraform Commands
 ```Shell
 terraform init
 terraform plan
 terraform apply
 ```
+Screen Capture the results of the Terraform Apply Command to submit for the contest<br>
+Example :
 
-- The output of completed terraform module should look similar to this
+![Module Success](images/genai-aws-success.png)
+<br>
 
-![Successful output example](images/genai-aws-success.png)
-
-- After the module completes you will need to SSH to the public IP of the instance to access the console.  The public IP is generated as part of the instance creation so access your aws console to find the public ip in the details tab of the instance.  The module will generate a private key in the folder where you ran the "terraform apply" command.
-
-Run the ssh command as below:
-```hcl
-ssh ubuntu@<Public_IP_Address_EC2_Instance> -i tfkey.private
-```
-* Note: If you get a permission denied message you may have to change the permissions of the tf.private file by using the command "CHMOD 400 tf.private" Then run step 5 again to connect.
-
-- Once you are logged into the EC2 instance, run the command
 ```Shell
-source /usr/local/bin/run_demo.sh
+WAIT 10 MINUTES
 ```
-If this is successful you will see the following output:
+After the Terraform module successfully creates the EC2 instance, **wait ~10 minutes** for the recipe to download/install FastChat and the LLM model before continuing.
 
-```shell
-ubuntu@ip-172-31-33-45:~$ source /usr/local/bin/run_demo.sh
-2023-09-06 14:10:00 | INFO | gradio_web_server_multi | args: Namespace(host='0.0.0.0', port=None, share=True, controller_url='http://localhost:21001', concurrency_count=10, model_list_mode='once', moderate=False, add_chatgpt=False, add_claude=False, add_palm=False, anony_only_for_proprietary_model=False, register_openai_compatible_models=None, gradio_auth_path=None, elo_results_file=None, leaderboard_table_file=None)
-2023-09-06 14:10:00 | INFO | gradio_web_server | Models: ['4th_GenXeon_Vicuna_7b']
-2023-09-06 14:10:00 | INFO | stdout | Running on local URL:  http://0.0.0.0:7860
-2023-09-06 14:10:02 | INFO | stdout | Running on public URL: https://64163ad5b65c927ff1.gradio.live
-2023-09-06 14:10:02 | INFO | stdout |
-2023-09-06 14:10:02 | INFO | stdout | This share link expires in 72 hours. For free permanent hosting and GPU upgrades, run `gradio deploy` from Terminal to deploy to Spaces (https://huggingface.co/spaces)
-```
+1. Connect to the newly created AWS EC2 instance using SSH<br>
+  
+      a. The terraform module creates a key pair and adds the public key to the EC2 instance. It keeps the private key in the same folder from where the **terraform apply** was run. File name = tfkey.private<br>
+  
+    b. At your Terraform prompt, nagivate to the folder from where you ran the **terraform apply** command and change the permissions of the file:
+    ```hcl
+    chmod 400 tfkey.private
+    ```
 
-Open a browser and go to the public ip of your instance a browser.  
-http://public_ip:7860
+    c. Run the ssh command as below:
+    ```hcl
+    ssh ubuntu@<Public_IP_Address_EC2_Instance> -i tfkey.private
+    ```
 
-Once you get to the application, you will see a screen like this:
+2. Once you are logged into the EC2 instance, run the command
+    ```hcl
+    source /usr/local/bin/run_demo.sh
+    ```
+    If successful your prompt will look similar to this
+    ```shell
+    ubuntu@ip-172-31-33-45:~$ source /usr/local/bin/run_demo.sh
+    2023-09-06 14:10:00 | INFO | gradio_web_server_multi | args: Namespace(host='0.0.0.0', port=None, share=True, controller_url='http://localhost:21001', concurrency_count=10, model_list_mode='once', moderate=False, add_chatgpt=False, add_claude=False, add_palm=False, anony_only_for_proprietary_model=False, register_openai_compatible_models=None, gradio_auth_path=None, elo_results_file=None, leaderboard_table_file=None)
+    2023-09-06 14:10:00 | INFO | gradio_web_server | Models: ['4th_GenXeon_Vicuna_7b']
+    2023-09-06 14:10:00 | INFO | stdout | Running on local URL:  http://0.0.0.0:7860
+    2023-09-06 14:10:02 | INFO | stdout | Running on public URL: https://64163ad5b65c927ff1.gradio.live
+    2023-09-06 14:10:02 | INFO | stdout |
+    2023-09-06 14:10:02 | INFO | stdout | This share link expires in 72 hours. For free permanent hosting and GPU upgrades, run `gradio deploy` from Terminal to deploy to Spaces (https://huggingface.co/spaces)
+    ```
 
-![Single Model Screen](images/fastchat-single.png)
 
-You can now generate the lyrics for your song.
+3. Now you can access the Fastchat by opening your browser and entering the following URL     
+http://yourpublicip:7860
 
-## Submitting Results
+4. Type in the prompt to interact with fastchat. Enter your message or question in the chat prompt to see the Fastchat in action?  Example:
 
-For this portion of the contest, you will need to submit 2 screenshots:
-1) A screenshot of the successful Terraform Run.
-Here is an example
-![Successful output example](images/genai-aws-success.png)
+    ```text
+    Prompt: Write a song about Star Wars in the style of Frank Sinatra
+    ```
 
-2) A screenshot the prompt you used and take a screenshot of the prompt and lyrics. 
+    The output from FastChat:
+    ```text
+    Lyrics: 
 
-**For the prompt and lyrics:**
+    Verse 1:
+    A long time ago, in a galaxy far, far away
+    A hero emerged, to save us all from the dark side
+    He fought against the evil Empire, with a lightsaber in hand
+    And brought hope to the galaxy, with a wave of his wand
 
-```text
-Prompt: Write a song about Star Wars in the style of Frank Sinatra
-Lyrics: 
+    Chorus:
+    Star Wars, Star Wars, the epic space saga
+    With heroes and villains, it's a story we all know
+    From a tiny planet, to the Death Star
+    The Force is strong, with our Jedi warriors
+    ```
 
-Verse 1:
-A long time ago, in a galaxy far, far away
-A hero emerged, to save us all from the dark side
-He fought against the evil Empire, with a lightsaber in hand
-And brought hope to the galaxy, with a wave of his wand
 
-Chorus:
-Star Wars, Star Wars, the epic space saga
-With heroes and villains, it's a story we all know
-From a tiny planet, to the Death Star
-The Force is strong, with our Jedi warriors
-```
+5. To delete the demo:<br>
+  a. Exit the VM instance by pressing Ctrl-C to break out of fastchat<br>
+  b. Then run Terraform destroy to delete all resources created<br>
 
-**Pick one of these two types of screenshots to provide with your results.**
+## Considerations
+- The AWS region where this example is run should have a default VPC
 
-![Lyrics UI Example](images/lyrics-ui-example.png)
-
-![Lyrics Console Example](images/lyrics-console-example.png)
 
 

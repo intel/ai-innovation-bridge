@@ -13,19 +13,6 @@
 ## Requirements
 - AWS Cloud Account
 
-## Module Overview
-You will need an AWS account as this terraform module will launch a M7i.4xlarge instance on AWS. These instances use the latest [Intel 4th Generation Xeon CPUs](https://www.intel.com/content/www/us/en/products/docs/processors/xeon-accelerated/4th-gen-xeon-scalable-processors.html), which include new accelerators that help speed up AI and other workloads. This event will focus on taking advantage of the [Intel AMX](https://www.intel.com/content/www/us/en/products/docs/accelerator-engines/advanced-matrix-extensions/overview.html) accelerator to do AI inferencing on CPUs.
-
-### Components of the Module
-- [Intel Optimized Cloud Recipes](https://github.com/intel/optimized-cloud-recipes)
-- [Intel Extension for PyTorch](https://github.com/intel/intel-extension-for-pytorch)
-- [FastChat](https://github.com/lm-sys/FastChat)
-
-This contest leverages the [Intel Cloud Optimization Modules](https://www.intel.com/content/www/us/en/developer/topic-technology/cloud-optimization.html) to provision the VM. <br>
-This contest requires you to use the [AWS VM Module](https://github.com/intel/terraform-intel-aws-vm) and the 
-
----
-
 ## Contest Participation Overview
 
 * Deploy the Terraform Module in your AWS account
@@ -49,3 +36,15 @@ Submissions for this contest will be done via X.com (aka Twitter)
 
 
 
+## Module Overview
+You will need an AWS account as this terraform module will launch a M7i.4xlarge instance on AWS. These instances use the latest [Intel 4th Generation Xeon CPUs](https://www.intel.com/content/www/us/en/products/docs/processors/xeon-accelerated/4th-gen-xeon-scalable-processors.html), which include new accelerators that help speed up AI and other workloads. This event will focus on taking advantage of the [Intel AMX](https://www.intel.com/content/www/us/en/products/docs/accelerator-engines/advanced-matrix-extensions/overview.html) accelerator to do AI inferencing on CPUs.
+
+### Components of the Module
+- [Intel Optimized Cloud Recipes](https://github.com/intel/optimized-cloud-recipes)
+- [Intel Extension for PyTorch](https://github.com/intel/intel-extension-for-pytorch)
+- [FastChat](https://github.com/lm-sys/FastChat)
+
+This contest leverages the [Intel Cloud Optimization Modules](https://www.intel.com/content/www/us/en/developer/topic-technology/cloud-optimization.html) to provision the VM. <br>
+This contest requires you to use the [AWS VM Module](https://github.com/intel/terraform-intel-aws-vm) and the 
+
+---
