@@ -19,7 +19,7 @@
 * Connect to the public ip of your EC2 instance to access the Fast Chat UI
 * Enter in the prompt to generate song lyrics
 
-    **[Click here for detailed Rock Star Contest Instructions](fastchat/README.md)**
+    **[Click here for detailed Rock Star Contest Instructions](Instructions.md)**
 * Submit your entry to X.com
 
 Refer to the [Official Rules](terms.md)
