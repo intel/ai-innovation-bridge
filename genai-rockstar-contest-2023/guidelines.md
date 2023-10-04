@@ -15,5 +15,3 @@
 
 - Total number of "reposts" on the X.com platform
 - In the case of a tie on number of "reposts", Earliest post will win
-
-## Have Fun!

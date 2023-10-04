@@ -1,4 +1,4 @@
-# Generate Song Lyrics
+# GenAI Rockstar Contest
 
 We will be using one of Intel's Optimized Cloud Recipes. If you want to experiment with this on your own, you can find the recipe [here](https://github.com/intel/optimized-cloud-recipes/tree/main/recipes/ai-fastchat-amx-ubuntu).
 
@@ -8,7 +8,23 @@ Intel AMX has been enabled by default.
 
 ## Instructions
 
-Download and run the [gen-ai-fastchat](https://github.com/intel/terraform-intel-aws-vm/tree/main/examples/gen-ai-fastchat) Terraform Module 
+Open your AWS account and click the Cloudshell
+At the command prompt enter in in these command promps to install Terraform into the AWS Cloudshell
+```Shell
+git clone https://github.com/tfutils/tfenv.git ~/.tfenv
+mkdir ~/bin
+ln -s ~/.tfenv/bin/* ~/bin/
+tfenv install 1.3.0
+tfenv use 1.3.0
+```
+Download and run the [gen-ai-fastchat](https://github.com/intel/terraform-intel-aws-vm/tree/main/examples/gen-ai-fastchat) Terraform Module by typing this command
+```Shell
+git clone https://github.com/intel/terraform-intel-aws-vm.git
+```
+Change into the fastchat example folder
+```Shell
+cd terraform-intel-aws-vm/examples/gen-ai-fastchat
+```
 
 ```Shell
 terraform init
