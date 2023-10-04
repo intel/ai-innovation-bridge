@@ -99,6 +99,14 @@ http://yourpublicip:7860
     The Force is strong, with our Jedi warriors
     ```
 
+    ***Screenshot your lyrics***
+
+
+5. Create an X.com Post under your account
+  Included in the post must be:<br>
+        1) A screenshot of your Terraform code output successfully deployment<br>
+        2) A screenshot of your song lyrics that were generated <br>
+        3) Use the ***#IntelGenAI*** as the hashtag in your x.com post<br>
 
 5. To delete the demo:<br>
   a. Exit the VM instance by pressing Ctrl-C to break out of fastchat<br>
