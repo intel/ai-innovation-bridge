@@ -1,12 +1,31 @@
-# GenAI Rockstar Contest
+# Intel Generative AI Rockstar HashiConf Drawing
 
-We will be using one of Intel's Optimized Cloud Recipes. If you want to experiment with this on your own, you can find the recipe [here](https://github.com/intel/optimized-cloud-recipes/tree/main/recipes/ai-fastchat-amx-ubuntu).
+![Generative AI Rockstar](images/ai-rockstar.png)
 
-This recipe is included in the Terraform module.  This installs and configures [Fastchat](https://github.com/lm-sys/FastChat) on the VM created in your AWS account. The [Intel Extension for Pytorch](https://github.com/intel/intel-extension-for-pytorch) also deploys onto the VM, along with a few other components, for full details, refer to the recipe.
+## Details
 
-Intel AMX has been enabled by default.
+- Deploy the [gen-ai-fastchat](https://github.com/intel/terraform-intel-aws-vm/tree/main/examples/gen-ai-fastchat) Terraform module using an AWS Cloud account
+- The module will create an EC2 Instance with an Intel 4th Generation Xeon CPU in your AWS Account
+- Access your EC2 instance via a web URL to create AI generated lyrics
+- Screen shot or take a picture of your results and bring that to our booth to pick up an entry to win a Beelink Mini S12 Pro Mini PC
+- See Contest [Guidelines](guidelines.md) for complete details
 
-## Instructions
+## Requirements
+- AWS Cloud Account
+
+## Participation Overview
+
+* Deploy the Terraform Module in your AWS account
+* Connect to the public ip of your EC2 instance to access the Fast Chat UI
+* Enter in a prompt to generate song lyrics
+* Bring a screenshot or picture of:
+    1) Terraform output of the successful deployment he Module
+    2) The song lyrics you generated using FastChat
+
+Refer to the [Official Rules](terms.md)
+
+
+## Instructions on how to deploy the GenAI FastChat Module
 
 Open your AWS account and click the Cloudshell
 At the command prompt enter in in these command promps to install Terraform into the AWS Cloudshell
@@ -32,7 +51,7 @@ terraform init
 terraform plan
 terraform apply
 ```
-Screen Capture the results of the Terraform Apply Command to submit for the contest<br>
+Screen Capture the results of the Terraform Apply Command so you can bring that to us at the HashiConf Intel Booth <br>
 Example :
 
 ![Module Success](images/genai-aws-success.png)
@@ -102,15 +121,29 @@ http://yourpublicip:7860
     ***Screenshot your lyrics***
 
 
-5. Create an X.com Post under your account
-  Included in the post must be:<br>
-        1) A screenshot of your Terraform code output successfully deployment<br>
-        2) A screenshot of your song lyrics that were generated <br>
-        3) Use the ***#IntelGenAI*** as the hashtag in your x.com post<br>
+5. Screen shot your lyrics as and bring both your terraform output results and your lyrics to the Intel booth at HashiConf 2023 between 8:00am PST October 10th and 5:00pm PST October 11th 
 
 5. To delete the demo:<br>
   a. Exit the VM instance by pressing Ctrl-C to break out of fastchat<br>
   b. Then run Terraform destroy to delete all resources created<br>
+
+
+## Module Overview
+You will need an AWS account as this terraform module will launch a M7i.4xlarge instance on AWS. These instances use the latest [Intel 4th Generation Xeon CPUs](https://www.intel.com/content/www/us/en/products/docs/processors/xeon-accelerated/4th-gen-xeon-scalable-processors.html), which include new accelerators that help speed up AI and other workloads. This event will focus on taking advantage of the [Intel AMX](https://www.intel.com/content/www/us/en/products/docs/accelerator-engines/advanced-matrix-extensions/overview.html) accelerator to do AI inferencing on CPUs.
+
+### Components of the Module
+- [Intel Optimized Cloud Recipes](https://github.com/intel/optimized-cloud-recipes)
+- [Intel Extension for PyTorch](https://github.com/intel/intel-extension-for-pytorch)
+- [FastChat](https://github.com/lm-sys/FastChat)
+
+For this you will be using one of the [Intel Cloud Optimization Modules](https://www.intel.com/content/www/us/en/developer/topic-technology/cloud-optimization.html) to provision the VM. <br>
+You will be using the [AWS VM Module](https://github.com/intel/terraform-intel-aws-vm) and the gen-ai-fastchat example in that module.
+
+The gen-ai-fastchat example leverages one of Intel's Optimized Cloud Recipes. If you want to experiment with this on your own, you can find the recipe [here](https://github.com/intel/optimized-cloud-recipes/tree/main/recipes/ai-fastchat-amx-ubuntu).
+
+This recipe is included in the Terraform module you are deploying.  This installs and configures [Fastchat](https://github.com/lm-sys/FastChat) on the VM created in your AWS account. The [Intel Extension for Pytorch](https://github.com/intel/intel-extension-for-pytorch) also deploys onto the VM, along with a few other components, for full details, refer to the recipe.
+
+Intel AMX has been enabled by default.
 
 ## Considerations
 - The AWS region where this example is run should have a default VPC
