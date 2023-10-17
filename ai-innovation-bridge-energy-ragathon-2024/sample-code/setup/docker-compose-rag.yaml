@@ -1,0 +1,25 @@
+version: '3'
+services:
+
+  supportbot_chatbot:
+    build:
+      context: ../supportbot_chatbot/
+      dockerfile: Dockerfile
+    ports:
+      - 5004:5004
+    volumes:
+      - /home/sdp/AI-Hackathon/ai-super-reference-kit-2023/pharmaceutical_manufacturing_business/store:/supportbot_chatbot/store
+    restart: on-failure
+
+  app_frontend:
+    build:
+      context: ../app_frontend/
+      dockerfile: Dockerfile
+    ports:
+      - 5005:5005
+    volumes:
+      - /home/sdp/AI-Hackathon/ai-super-reference-kit-2023/pharmaceutical_manufacturing_business/store:/app_frontend/store
+    restart: on-failure
+
+
+      
