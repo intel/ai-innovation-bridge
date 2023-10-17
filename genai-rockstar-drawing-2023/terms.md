@@ -8,19 +8,19 @@ These rules (“Rules”) govern the Intel Gen AI Rockstar Drawing (the “Drawi
 
     To obtain an additional (5) “physical” numbered tickets to the drawing, participants can use their own AWS account to run a Terraform Module which includes a generative AI model to create song lyrics.  To obtain the additional (5) tickets, you must successfully deploy the Terraform code and provide visual proof of the successful completion of the Terraform code, along with the song lyrics generated from the AWS instance that was created from the Terraform module.
 
-    Intel Corporation (the “Sponsor”) is offering the Drawing and will award prizes based a random drawing from all of the distributed tickets.  To receive an entry, visit the Intel Booth at HashiConf 2023 between 12:00pm on October 10 2023 and 12:00pm PT on October 13, 2023.
+    Intel Corporation (the “Sponsor”) is offering the Drawing and will award prizes based a random drawing from all of the distributed tickets.  To receive an entry, visit the Intel Booth at HashiConf 2023 between 2:00pm on October 10 2023 and 12:00pm PT on October 12, 2023.
 
 
 2.	Eligibility: The Drawing is open to any attendees of the HashiConf 2023 in San Franciso California, USA. Employees, officers and representatives (and members of their immediate families and those living in the same household of each) of Intel Corporation, its parents, subsidiaries and affiliated companies, advertising and promotion agencies and any company involved in the design, execution, production or judging of this promotion (“Drawing entities”) are ineligible. Void where prohibited.
 
 
-3.	Entry Requirements: You must physically visit the Intel Booth at HashiConf 2023 in San Franciso California, USA between 12:00pm PST  October 10th and 12:00pm PST October 13th to receive one (1) “physical” numbered ticket to the drawing. 
+3.	Entry Requirements: You must physically visit the Intel Booth at HashiConf 2023 in San Franciso California, USA between 2:00pm PST  October 10th and 12:00pm PST October 12th to receive one (1) “physical” numbered ticket to the drawing. 
 
     To obtain an additional (5) “physical” numbered tickets to the drawing, participants can use their own AWS account to run a Terraform Module which includes a generative AI model to create song lyrics.  To obtain the additional (5) tickets, you must successfully deploy the Terraform code and provide visual proof of the successful completion of the Terraform code, along with the song lyrics generated from the AWS instance that was created from the Terraform module.
 
 4.	Prizes: Two (2) prizes will be awarded by drawing “physical” numbered tickets in person at the Intel booth at HashiConf 2023 in San Franciso California, USA.  Prizes will consist of a Mini PC's [Beelink Mini S12 Pro Mini PC, Intel 12th Gen Alder Lake- N100 up to 3.4GHz] (est. retail value of `$200` per pc).
 
-5. Drawing Selection and Notification of Winners: The Drawing will occur on Thursday October 12th at 1:00pm at the Intel booth at HashiConf 2023 in San Franciso California, USA.  
+5. Drawing Selection and Notification of Winners: The Drawing will occur on Thursday October 12th at 1:30pm at the Intel booth at HashiConf 2023 in San Franciso California, USA.  
 
     Must be present with the “physical” numbered ticket to present to the Intel representative hosting the drawing.  Intel reserves the right to select an alternative winner should the first or second winner fail to be present to claim their prize.
 
