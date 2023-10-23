@@ -1,4 +1,4 @@
-# AI Reference Kit Prototyping Framework: Fast AI Prototyping with Intel AI Reference Kits
+# AI Reference Kit Prototyping Framework
 
 Whether you’re a formal enterprise or getting a startup off the ground, the prototype is an essential tool to help us accomplish the following chief aims:
 
