@@ -25,27 +25,27 @@ The framework is a simple set of steps for developers to follow as they leverage
 ### Pharmaceutical Manufacturing Business Prototype
 The AI Reference Kit prototype, “Pharmaceuticals Manufacturing Business,” integrates cutting-edge tools to streamline and enhance pharmaceutical production processes. 
 
-- Demand Forecasting Module: employs a time series prediction CNN-LSTM model optimized for Intel® 4th Generation Xeon® Scalable processors using Intel® Extensions for TensorFlow, ensuring accurate demand projections for various products across multiple locales. 
-- Predictive Asset Maintenance Module: utilizes an XGBoost classifier with the Intel® Extension for Scikit-Learn to preemptively flag equipment needing service.
-- Visual Anomaly Detection Module: Based on VGG-16 or Padim models, visual anomaly detection capabilities are embedded to quickly determine product quality via visual inspection, leveraging technologies such as OpenVINO and Anomalib.
-- GenAI Chatbot Module: Complementing these is a generative AI chatbot powered by GPT4all-J LLM and RAG, tailored for interactions related to robotic maintenance situations.
+- **Demand Forecasting Module:** employs a time series prediction CNN-LSTM model optimized for Intel® 4th Generation Xeon® Scalable processors using Intel® Extensions for TensorFlow, ensuring accurate demand projections for various products across multiple locales. 
+- **Predictive Asset Maintenance Module:** utilizes an XGBoost classifier with the Intel® Extension for Scikit-Learn to preemptively flag equipment needing service.
+- **Visual Anomaly Detection Module:** Based on VGG-16 or Padim models, visual anomaly detection capabilities are embedded to quickly determine product quality via visual inspection, leveraging technologies such as OpenVINO and Anomalib.
+- **GenAI Chatbot Module:** Complementing these is a generative AI chatbot powered by GPT4all-J LLM and RAG, tailored for interactions related to robotic maintenance situations.
   
 All components are adeptly optimized for the Intel® 4th Generation Xeon® Scalable processors, demonstrating the convergence of AI innovation and pharmaceutical manufacturing.
 
 ### How we built the Pharmaceutical Manufacturing Business Kit
-1. Picking the Kits: After identifying that we wanted to address inefficiencies in the pharmaceutical manufacturing lifecycle, we explored the AI Reference Kits and Edge AI Reference Kits to identify use cases (Figure 3) that closely resembled the challenges we wanted to solve with our prototype.
+1. **Picking the Kits:** After identifying that we wanted to address inefficiencies in the pharmaceutical manufacturing lifecycle, we explored the AI Reference Kits and Edge AI Reference Kits to identify use cases (Figure 3) that closely resembled the challenges we wanted to solve with our prototype.
 
 ![image](https://github.com/intel/AI-Hackathon/assets/57263404/6abe23e4-19e2-4cd7-919e-a010e3885420)
 
-2. Cloning the Repos: After identifying the Demand Forecasting, Visual QA/QC, Predictive Maintenance, and Chatbot reference kits, we cloned the appropriate repositories to gain access to the source code. For example, to clone the Predictive Asset Maintenance Kit, run `git clone https://github.com/oneapi-src/predictive-asset-health-analytics.git`
+2. **Cloning the Repos:** After identifying the Demand Forecasting, Visual QA/QC, Predictive Maintenance, and Chatbot reference kits, we cloned the appropriate repositories to gain access to the source code. For example, to clone the Predictive Asset Maintenance Kit, run `git clone https://github.com/oneapi-src/predictive-asset-health-analytics.git`
 
-3. Refactoring Kits: The reference kits were structured as command-line Python scripts. Consequently, we refined these scripts into Python modules and libraries, preparing them for seamless integration with the APIs we planned to develop subsequently. 
+3. **Refactoring Kits:** The reference kits were structured as command-line Python scripts. Consequently, we refined these scripts into Python modules and libraries, preparing them for seamless integration with the APIs we planned to develop subsequently. 
 
   For example, we refactored the Predictive Asset Maintenance Kit, originally designed to predict when powerlines need to be maintained. We pivoted the   original use case into a predictive tool for maintaining robotics equipment on the pharma product production line.
   
   This is where you’re expected to spend most of your time as you refactor and pivot the original use case. The time savings come from leveraging the boilerplate code already available in the kits.
 
-4. Creating FastAPI Endpoints: The following steps involve building API endpoints, preferably using FastAPI or another Python API tool, and setting up the frontend using Streamlit. Below is the FastAPI script used to create and deploy the endpoints supporting the machine learning logic on a uvicorn server.
+4. **Creating FastAPI Endpoints:** The following steps involve building API endpoints, preferably using FastAPI or another Python API tool, and setting up the frontend using Streamlit. Below is the FastAPI script used to create and deploy the endpoints supporting the machine learning logic on a uvicorn server.
 
 ```python
 import uvicorn
@@ -118,7 +118,7 @@ In the script above, we built three separate endpoints that respond to client re
 **/train endpoint:** receives training parameters and data and returns the location of the trained XGBoost classifier. 
 **/predict endpoint:** receives the location of the trained classifier and raw data and returns maintenance classification. 
 
-5. Building and Connecting the Frontend: We leverage the Streamlit low-code frontend developer framework to build a multi-page web application. Each component of the application has its front-end Streamlit script. The script for each pharma manufacturing frontend component can be found here.
+5. **Building and Connecting the Frontend:** We leverage the Streamlit low-code frontend developer framework to build a multi-page web application. Each component of the application has its front-end Streamlit script. The script for each pharma manufacturing frontend component can be found here.
 
 ![gifapp](https://github.com/intel/AI-Hackathon/assets/57263404/d7beb17e-8196-44cc-ad05-b32b4d38c344)
 
@@ -133,7 +133,7 @@ TRAINING_RESPONSE = requests.post(url = URL, json = DATA)
 
 To make changes to the UI components, we recommend visiting Streamlit’s API Documentation.
 
-6. Configuring Deployment Tools: As far as deployment goes, the framework leverages docker and docker-compose to manage the containerization and simultaneous deployment of multiple services. For more complex deployments, consider leveraging a container management tool like Kubernetes.
+6. **Configuring Deployment Tools:** As far as deployment goes, the framework leverages docker and docker-compose to manage the containerization and simultaneous deployment of multiple services. For more complex deployments, consider leveraging a container management tool like Kubernetes.
 
 As an example, in the following dockerfile, we configure the predictive maintenance image: 
 
@@ -217,7 +217,7 @@ services:
     restart: on-failure
 ```
 
-9. Managing Configurations with Make: An option for efficient setup and deployment from the command line, we leveraged the Linux make utility. You can find the make file for this prototype here. 
+7. Managing Configurations with Make: An option for efficient setup and deployment from the command line, we leveraged the Linux make utility. You can find the make file for this prototype here. 
 
 ## Summary: 
 The article discusses the AI Reference Kit Prototyping Framework, powered by Intel’s AI Reference Kits and open-source software, designed to streamline AI prototype development. The framework aids in transforming traditional components into ML solutions optimized for Intel’s hardware and software, incorporating popular open-source tools. This framework allows developers to efficiently prototype various workflows, as illustrated with the AI Reference Kit prototype for the Pharmaceutical Manufacturing Business.
