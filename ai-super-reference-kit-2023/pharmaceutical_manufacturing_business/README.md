@@ -9,18 +9,18 @@ Whether you’re a formal enterprise or getting a startup off the ground, the pr
 The **AI Reference Kit Prototyping Framework** enables developers to focus on the above by ensuring that composing a prototype doesn’t involve writing too much boilerplate ML code and that there’s a clear path from ideation to an attractive demo. 
 
 ### What is an AI Reference Kit Prototype? 
-An “AI Reference Kit Prototype” comprises distinct product lifecycle components that have been re-imagined — transforming them from legacy implementation to machine learning solutions powered by the Intel hardware and software stack with integrations of popular open-source tools (Figure 1). 
+An “AI Reference Kit Prototype” comprises distinct product lifecycle components that have been re-imagined — transforming them from legacy implementation to machine learning solutions powered by the Intel hardware and software stack with integrations of popular open-source tools. 
 
 ![image](https://github.com/intel/AI-Hackathon/assets/57263404/3a10f14a-0385-4828-8d31-83247ab1b2d3)
 
-Each component of the prototyping framework starts with an AI Reference Kit and/or Edge AI Reference Kit refactored to enable a pseudo-microservice architecture (Figure 2). Refactoring the original kit makes integrating the final product into more complex applications easier.
+Each component of the prototyping framework starts with an AI Reference Kit and/or Edge AI Reference Kit refactored to enable a pseudo-microservice architecture. Refactoring the original kit makes integrating the final product into more complex applications easier.
 
 ![image](https://github.com/intel/AI-Hackathon/assets/57263404/15f5b6aa-6c25-4a25-96e5-8cffd82a3dce)
 
 This framework is ideal for simultaneously prototyping multiple parts of a workflow, showcasing how an optimized end-to-end solution could be made with Intel components to address a complex industry challenge. Let’s explore the framework below. 
 
-## The AI Reference Kit Prototyping Framework
-The framework is a simple set of steps for developers to follow as they leverage the AI Reference Kits to build prototypes. We will review these steps within the context of the AI Kit Prototype for the Pharmaceutical Manufacturing Business, which serves as the exemplary kit for this framework. The code for this example can be found here. 
+# Framework Outline and Example
+The framework is a simple set of steps for developers to follow as they leverage the AI Reference Kits to build prototypes. We will review these steps within the context of the AI Kit Prototype for the Pharmaceutical Manufacturing Business, which serves as the exemplary kit for this framework. The code for this example can be found in this repository.
 
 ### Pharmaceutical Manufacturing Business Prototype
 The AI Reference Kit prototype, “Pharmaceuticals Manufacturing Business,” integrates cutting-edge tools to streamline and enhance pharmaceutical production processes. 
@@ -33,13 +33,13 @@ The AI Reference Kit prototype, “Pharmaceuticals Manufacturing Business,” in
 All components are adeptly optimized for the Intel® 4th Generation Xeon® Scalable processors, demonstrating the convergence of AI innovation and pharmaceutical manufacturing.
 
 ### How we built the Pharmaceutical Manufacturing Business Kit
-1. **Picking the Kits:** After identifying that we wanted to address inefficiencies in the pharmaceutical manufacturing lifecycle, we explored the AI Reference Kits and Edge AI Reference Kits to identify use cases (Figure 3) that closely resembled the challenges we wanted to solve with our prototype.
+1. **Picking the Kits:** After identifying that we wanted to address inefficiencies in the pharmaceutical manufacturing lifecycle, we explored the [AI Reference Kits](https://www.intel.com/content/www/us/en/developer/topic-technology/artificial-intelligence/reference-kit-library.html) and [Edge AI Reference Kits](https://www.intel.com/content/www/us/en/developer/topic-technology/edge-5g/open-potential.html) to identify use cases that closely resembled the challenges we wanted to solve with our prototype.
 
 ![image](https://github.com/intel/AI-Hackathon/assets/57263404/6abe23e4-19e2-4cd7-919e-a010e3885420)
 
 2. **Cloning the Repos:** After identifying the Demand Forecasting, Visual QA/QC, Predictive Maintenance, and Chatbot reference kits, we cloned the appropriate repositories to gain access to the source code. For example, to clone the Predictive Asset Maintenance Kit, run `git clone https://github.com/oneapi-src/predictive-asset-health-analytics.git`
 
-3. **Refactoring Kits:** The reference kits were structured as command-line Python scripts. Consequently, we refined these scripts into Python modules and libraries, preparing them for seamless integration with the APIs we planned to develop subsequently. 
+3. **Refactoring Kits:** The reference kits were structured as command-line Python scripts. Consequently, we refactored these scripts into Python modules and libraries, preparing them for seamless integration with the APIs we planned to develop subsequently. 
 
   For example, we refactored the Predictive Asset Maintenance Kit, originally designed to predict when powerlines need to be maintained. We pivoted the   original use case into a predictive tool for maintaining robotics equipment on the pharma product production line.
   
@@ -223,7 +223,6 @@ services:
 The article discusses the AI Reference Kit Prototyping Framework, powered by Intel’s AI Reference Kits and open-source software, designed to streamline AI prototype development. The framework aids in transforming traditional components into ML solutions optimized for Intel’s hardware and software, incorporating popular open-source tools. This framework allows developers to efficiently prototype various workflows, as illustrated with the AI Reference Kit prototype for the Pharmaceutical Manufacturing Business.
 
 A few exciting things to try would be:
-
-- Join the Intel Developer Cloud, start an instance, clone the repository, and launch the Pharmaceutical Manufacturing prototype. 
+- Join the [Intel Developer Cloud]([cloud.intel.com](https://bit.ly/3PXLZBS)), start an instance, clone the repository, and launch the Pharmaceutical Manufacturing prototype. 
 - Start exploring the AI Reference Kit Library and Edge AI Reference Kits for opportunities to build meaningful prototypes using this framework. 
 
