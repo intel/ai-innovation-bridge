@@ -22,8 +22,6 @@ This framework is ideal for simultaneously prototyping multiple parts of a workf
 ## The AI Reference Kit Prototyping Framework
 The framework is a simple set of steps for developers to follow as they leverage the AI Reference Kits to build prototypes. We will review these steps within the context of the AI Kit Prototype for the Pharmaceutical Manufacturing Business, which serves as the exemplary kit for this framework. The code for this example can be found here. 
 
-The code is located in our AI-Hackathon repo because it forms part of our 
-
 ### Pharmaceutical Manufacturing Business Prototype
 The AI Reference Kit prototype, “Pharmaceuticals Manufacturing Business,” integrates cutting-edge tools to streamline and enhance pharmaceutical production processes. 
 
@@ -43,9 +41,9 @@ All components are adeptly optimized for the Intel® 4th Generation Xeon® Scala
 
 3. Refactoring Kits: The reference kits were structured as command-line Python scripts. Consequently, we refined these scripts into Python modules and libraries, preparing them for seamless integration with the APIs we planned to develop subsequently. 
 
-For example, we refactored the Predictive Asset Maintenance Kit, originally designed to predict when powerlines need to be maintained. We pivoted the original use case into a predictive tool for maintaining robotics equipment on the pharma product production line.
-
-This is where you’re expected to spend most of your time as you refactor and pivot the original use case. The time savings come from leveraging the boilerplate code already available in the kits.
+  For example, we refactored the Predictive Asset Maintenance Kit, originally designed to predict when powerlines need to be maintained. We pivoted the   original use case into a predictive tool for maintaining robotics equipment on the pharma product production line.
+  
+  This is where you’re expected to spend most of your time as you refactor and pivot the original use case. The time savings come from leveraging the boilerplate code already available in the kits.
 
 4. Creating FastAPI Endpoints: The following steps involve building API endpoints, preferably using FastAPI or another Python API tool, and setting up the frontend using Streamlit. Below is the FastAPI script used to create and deploy the endpoints supporting the machine learning logic on a uvicorn server.
 
