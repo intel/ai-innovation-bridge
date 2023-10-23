@@ -1,4 +1,4 @@
-# Intel AI Reference Kit Prototyping Challenge: Reinvent With Intel Codebase
+# Intel AI Reference Kit Prototyping Challenge
 
 The AI Reference Kit Prototyping Challenge allows developers to compete and learn how to build practical AI applications using intel-optimized software on intel hardware platforms.  In this challenge, you assume the persona of a “Consulting AI Developer,” you are tasked with delivering a prototype application to a technology review board in just a few days.  The application must meet the following requirements:
 - Must include at least one modular AI services based on a unique AI Reference Kit
@@ -46,7 +46,7 @@ What will Impress Judges:
 1. Community Judging Round: After submitting solutions through the dedicated discord channel, other developers and intel experts can vote on their favorite solutions. Developers have unlimited votes, so we recommend only voting for your favorite solutions. Votes are issues by giving a reaction to the solutions post. One reaction is equal to one point.
 2. Top 5 Judging by Intel Panel: The five solutions with the highest number of votes at the deadline of the community judging round will be evaluated in more detail over the next 24-48 hours by a panel of Intel judges. Below are the criteria that will be used in this round of judging.
 
-## A Glimpse into the Pharmaceutical Manufacturing Business "AI Super Reference Kit" Codebase
+## A Glimpse into the Pharmaceutical Manufacturing Business "AI Reference Kit Prototype" Codebase
 
 **Demo Code Snapshot**: Explore a sample that integrates demand prediction, predictive maintenance, customer support chatbot, and visual QA/QC reference kits. These are refactored into pseudo-microservices crafted for a pharmaceutical product lifecycle narrative, complete with a Streamlit frontend. Use this as your architectural muse!
 
