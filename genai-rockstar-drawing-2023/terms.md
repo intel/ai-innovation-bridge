@@ -8,13 +8,13 @@ These rules (“Rules”) govern the Intel Gen AI Rockstar Drawing (the “Drawi
 
     To obtain an additional (5) “physical” numbered tickets to the drawing, participants can use their own AWS account to run a Terraform Module which includes a generative AI model to create song lyrics.  To obtain the additional (5) tickets, you must successfully deploy the Terraform code and provide visual proof of the successful completion of the Terraform code, along with the song lyrics generated from the AWS instance that was created from the Terraform module.
 
-    Intel Corporation (the “Sponsor”) is offering the Drawing and will award prizes based a random drawing from all of the distributed tickets.  To receive an entry, visit the Intel Booth at AWS re:Invent 2023 between 9:00am on November 27th 2023 and 12:00pm PT on November 30th, 2023.
+    Intel Corporation (the “Sponsor”) is offering the Drawing and will award prizes based a random drawing from all of the distributed tickets.  To receive an entry, visit the Intel Booth at AWS re:Invent 2023 between 9:00am on November 27th 2023 and 3:00pm PT on November 30th, 2023.
 
 
 2.	Eligibility: The Drawing is open to any attendees of the AWS re:Invent 2023 in Las Vegas Nevada, USA. Employees, officers and representatives (and members of their immediate families and those living in the same household of each) of Intel Corporation, its parents, subsidiaries and affiliated companies, advertising and promotion agencies and any company involved in the design, execution, production or judging of this promotion (“Drawing entities”) are ineligible. Void where prohibited.
 
 
-3.	Entry Requirements: You must physically visit the Intel Booth at AWS re:Invent 2023 in Las Vegas Nevada, USA between 2:00pm PST  October 10th and 12:00pm PST October 12th to receive one (1) “physical” numbered ticket to the drawing. 
+3.	Entry Requirements: You must physically visit the Intel Booth at AWS re:Invent 2023 in Las Vegas Nevada, USA between 9:00am PST  November 27th and 3:00pm PST November 30th to receive one (1) “physical” numbered ticket to the drawing. 
 
     To obtain an additional (5) “physical” numbered tickets to the drawing, participants can use their own AWS account to run a Terraform Module which includes a generative AI model to create song lyrics.  To obtain the additional (5) tickets, you must successfully deploy the Terraform code and provide visual proof of the successful completion of the Terraform code, along with the song lyrics generated from the AWS instance that was created from the Terraform module.
 
