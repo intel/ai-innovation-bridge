@@ -1,10 +1,10 @@
-# Intel Generative AI Rockstar HashiConf Drawing
+# Intel Generative AI Rockstar AWS re:Invent Drawing
 
 ![Generative AI Rockstar](images/ai-rockstar.png)
 
 ## Details
 
-- Complete this module to get 5 extra ticket entries to the drawing at HashiConf 2023
+- Complete this module to get 5 extra ticket entries to the drawing at AWS re:Invent 2023
 - Deploy the [gen-ai-fastchat](https://github.com/intel/terraform-intel-aws-vm/tree/main/examples/gen-ai-fastchat) Terraform module using an AWS Cloud account
 - The module will create an EC2 Instance with an Intel 4th Generation Xeon CPU in your AWS Account
 - Access your EC2 instance via a web URL to create AI generated lyrics

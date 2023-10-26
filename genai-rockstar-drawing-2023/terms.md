@@ -4,23 +4,23 @@ These rules (“Rules”) govern the Intel Gen AI Rockstar Drawing (the “Drawi
 
 "NO PURCHASE NECESSARY.  VOID WHERE PROHIBITED" A PAYMENT OR PURCHASE WILL NOT INCREASE YOUR CHANCES OF WINNING"
 
-1.	How to Enter: The Drawing requires participants attend the HashiConf 2023 in San Franciso California, USA and visit the Intel Booth to receive one (1) “physical” numbered ticket to the drawing.  
+1.	How to Enter: The Drawing requires participants attend the AWS re:Invent 2023 in Las Vegas Nevada, USA and visit the Intel Booth to receive one (1) “physical” numbered ticket to the drawing.  
 
     To obtain an additional (5) “physical” numbered tickets to the drawing, participants can use their own AWS account to run a Terraform Module which includes a generative AI model to create song lyrics.  To obtain the additional (5) tickets, you must successfully deploy the Terraform code and provide visual proof of the successful completion of the Terraform code, along with the song lyrics generated from the AWS instance that was created from the Terraform module.
 
-    Intel Corporation (the “Sponsor”) is offering the Drawing and will award prizes based a random drawing from all of the distributed tickets.  To receive an entry, visit the Intel Booth at HashiConf 2023 between 2:00pm on October 10 2023 and 12:00pm PT on October 12, 2023.
+    Intel Corporation (the “Sponsor”) is offering the Drawing and will award prizes based a random drawing from all of the distributed tickets.  To receive an entry, visit the Intel Booth at AWS re:Invent 2023 between 9:00am on November 27th 2023 and 12:00pm PT on November 30th, 2023.
 
 
-2.	Eligibility: The Drawing is open to any attendees of the HashiConf 2023 in San Franciso California, USA. Employees, officers and representatives (and members of their immediate families and those living in the same household of each) of Intel Corporation, its parents, subsidiaries and affiliated companies, advertising and promotion agencies and any company involved in the design, execution, production or judging of this promotion (“Drawing entities”) are ineligible. Void where prohibited.
+2.	Eligibility: The Drawing is open to any attendees of the AWS re:Invent 2023 in Las Vegas Nevada, USA. Employees, officers and representatives (and members of their immediate families and those living in the same household of each) of Intel Corporation, its parents, subsidiaries and affiliated companies, advertising and promotion agencies and any company involved in the design, execution, production or judging of this promotion (“Drawing entities”) are ineligible. Void where prohibited.
 
 
-3.	Entry Requirements: You must physically visit the Intel Booth at HashiConf 2023 in San Franciso California, USA between 2:00pm PST  October 10th and 12:00pm PST October 12th to receive one (1) “physical” numbered ticket to the drawing. 
+3.	Entry Requirements: You must physically visit the Intel Booth at AWS re:Invent 2023 in Las Vegas Nevada, USA between 2:00pm PST  October 10th and 12:00pm PST October 12th to receive one (1) “physical” numbered ticket to the drawing. 
 
     To obtain an additional (5) “physical” numbered tickets to the drawing, participants can use their own AWS account to run a Terraform Module which includes a generative AI model to create song lyrics.  To obtain the additional (5) tickets, you must successfully deploy the Terraform code and provide visual proof of the successful completion of the Terraform code, along with the song lyrics generated from the AWS instance that was created from the Terraform module.
 
-4.	Prizes: Two (2) prizes will be awarded by drawing “physical” numbered tickets in person at the Intel booth at HashiConf 2023 in San Franciso California, USA.  Prizes will consist of a Mini PC's [Beelink Mini S12 Pro Mini PC, Intel 12th Gen Alder Lake- N100 up to 3.4GHz] (est. retail value of `$200` per pc).
+4.	Prizes: Three (3) prizes will be awarded by drawing “physical” numbered tickets in person at the Intel booth at AWS re:Invent 2023 in Las Vegas Nevada, USA.  Prizes will consist of a Mini PC's [Beelink Mini S12 Pro Mini PC, Intel 12th Gen Alder Lake- N100 up to 3.4GHz] (est. retail value of `$200` per pc).
 
-5. Drawing Selection and Notification of Winners: The Drawing will occur on Thursday October 12th at 1:30pm at the Intel booth at HashiConf 2023 in San Franciso California, USA.  
+5. Drawing Selection and Notification of Winners: There will be one (1) drawing per day on November 28th, 29th and 30th 2023 at the Intel booth at AWS re:Invent 2023 in Las Vegas Nevada, USA.  
 
     Must be present with the “physical” numbered ticket to present to the Intel representative hosting the drawing.  Intel reserves the right to select an alternative winner should the first or second winner fail to be present to claim their prize.
 
@@ -46,6 +46,7 @@ Sponsor’s entire liability and your sole and exclusive remedy will be limited 
 
 
 10.	Generally:  Sponsors may make changes to these Rules at any time without notice to you. The most current version of the Rules will be available at https://github.com/intel/AI-Hackathon/tree/master/genai-rockstar-drawing-2023/terms.md. Contributing to the Drawing or accepting prizes will constitute acceptance of the revised rules.  These Rules prevail in the event of any conflict or inconsistency with any other communications, including advertising or promotional materials.
+
 11.	For any feedback or questions regarding the Drawing or the prizes you can contact Intel by sending an email to Kevin Bleckmann at kevin.bleckmann@intel.com.
 
 12.	The Sponsor of this Drawing is Intel Corporation. The Drawing is administered by:
