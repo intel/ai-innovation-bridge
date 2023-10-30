@@ -1,14 +1,14 @@
-# Intel Generative AI Rockstar HashiConf Drawing
+# Intel Generative AI Rockstar AWS re:Invent Drawing
 
 ![Generative AI Rockstar](images/ai-rockstar.png)
 
 ## Details
 
-- Complete this module to get 5 extra ticket entries to the drawing at HashiConf 2023
+- Complete this module to get 10 extra ticket entries to the drawing at AWS re:Invent 2023
 - Deploy the [gen-ai-fastchat](https://github.com/intel/terraform-intel-aws-vm/tree/main/examples/gen-ai-fastchat) Terraform module using an AWS Cloud account
 - The module will create an EC2 Instance with an Intel 4th Generation Xeon CPU in your AWS Account
 - Access your EC2 instance via a web URL to create AI generated lyrics
-- Screen shot or take a picture of your successful "terraform apply" results and your fastchat generated lyrics, and bring that to the Intel  Booth at HashiConf 2023, to pick up your 5 additional entries to win a Beelink Mini S12 Pro Mini PC
+- Screen shot or take a picture of your successful "terraform apply" results and your fastchat generated lyrics, and bring that to the Intel  Booth at AWS re:Invent 2023, to pick up your 10 additional entries to win a Alienware Gaming Laptop!
 - See Contest [Guidelines](guidelines.md) for complete details
 
 ## Requirements
@@ -126,7 +126,7 @@ http://yourpublicip:7860
     ***Screenshot your lyrics***
 
 
-5. Screen shot your lyrics as and bring both your terraform output results and your lyrics to the Intel booth at HashiConf 2023 between 8:00am PST October 10th and 5:00pm PST October 11th 
+5. Screen shot your lyrics as and bring both your terraform output results and your lyrics to the Intel booth at HashiConf 2023 between 8:00am PST November 27th and 3:00pm PST November 30th 
 
 5. To delete the demo:<br>
   a. Exit the VM instance by pressing Ctrl-C to break out of fastchat<br>
