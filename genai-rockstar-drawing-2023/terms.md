@@ -6,7 +6,7 @@ These rules (“Rules”) govern the Intel Gen AI Rockstar Drawing (the “Drawi
 
 1.	How to Enter: The Drawing requires participants attend the AWS re:Invent 2023 in Las Vegas Nevada, USA and visit the Intel Booth to receive one (1) “physical” numbered ticket to the drawing.  
 
-    To obtain an additional (5) “physical” numbered tickets to the drawing, participants can use their own AWS account to run a Terraform Module which includes a generative AI model to create song lyrics.  To obtain the additional (5) tickets, you must successfully deploy the Terraform code and provide visual proof of the successful completion of the Terraform code, along with the song lyrics generated from the AWS instance that was created from the Terraform module.
+    To obtain an additional (10) “physical” numbered tickets to the drawing, participants can use their own AWS account to run a Terraform Module which includes a generative AI model to create song lyrics.  To obtain the additional (10) tickets, you must successfully deploy the Terraform code and provide visual proof of the successful completion of the Terraform code, along with the song lyrics generated from the AWS instance that was created from the Terraform module.
 
     Intel Corporation (the “Sponsor”) is offering the Drawing and will award prizes based a random drawing from all of the distributed tickets.  To receive an entry, visit the Intel Booth at AWS re:Invent 2023 between 9:00am on November 27th 2023 and 3:00pm PT on November 30th, 2023.
 
@@ -16,9 +16,9 @@ These rules (“Rules”) govern the Intel Gen AI Rockstar Drawing (the “Drawi
 
 3.	Entry Requirements: You must physically visit the Intel Booth at AWS re:Invent 2023 in Las Vegas Nevada, USA between 9:00am PST  November 27th and 3:00pm PST November 30th to receive one (1) “physical” numbered ticket to the drawing. 
 
-    To obtain an additional (5) “physical” numbered tickets to the drawing, participants can use their own AWS account to run a Terraform Module which includes a generative AI model to create song lyrics.  To obtain the additional (5) tickets, you must successfully deploy the Terraform code and provide visual proof of the successful completion of the Terraform code, along with the song lyrics generated from the AWS instance that was created from the Terraform module.
+    To obtain an additional (10) “physical” numbered tickets to the drawing, participants can use their own AWS account to run a Terraform Module which includes a generative AI model to create song lyrics.  To obtain the additional (10) tickets, you must successfully deploy the Terraform code and provide visual proof of the successful completion of the Terraform code, along with the song lyrics generated from the AWS instance that was created from the Terraform module.
 
-4.	Prizes: Three (3) prizes will be awarded by drawing “physical” numbered tickets in person at the Intel booth at AWS re:Invent 2023 in Las Vegas Nevada, USA.  Prizes will consist of a Mini PC's [Beelink Mini S12 Pro Mini PC, Intel 12th Gen Alder Lake- N100 up to 3.4GHz] (est. retail value of `$200` per pc).
+4.	Prizes: Three (3) prizes will be awarded by drawing “physical” numbered tickets in person at the Intel booth at AWS re:Invent 2023 in Las Vegas Nevada, USA.  Prizes will consist of three(3) Alienware Gaming Laptops [Alienware m16 Gaming laptop with 13th Gen Intel® Core™ i9-13900HX processor] (est. retail value of $2200 per laptop)
 
 5. Drawing Selection and Notification of Winners: There will be one (1) drawing per day on November 28th, 29th and 30th 2023 at the Intel booth at AWS re:Invent 2023 in Las Vegas Nevada, USA.  
 
