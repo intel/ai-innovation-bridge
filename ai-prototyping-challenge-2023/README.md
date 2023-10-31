@@ -1,4 +1,4 @@
-# Intel AI Reference Kit Prototyping Challenge
+# Intel AI Reference Kit "Prototyping Challenge"
 
 The AI Reference Kit Prototyping Challenge allows developers to compete and learn how to build practical AI applications using intel-optimized software on intel hardware platforms.  In this challenge, you assume the persona of a “Consulting AI Developer,” you are tasked with delivering a prototype application to a technology review board in just a few days.  The application must meet the following requirements:
 - Must include at least one modular AI services based on a unique AI Reference Kit
@@ -48,7 +48,7 @@ What will Impress Judges:
 
 ## A Glimpse into the Pharmaceutical Manufacturing Business "AI Reference Kit Prototype" Codebase
 
-**Demo Code Snapshot**: Explore a sample that integrates demand prediction, predictive maintenance, customer support chatbot, and visual QA/QC reference kits. These are refactored into pseudo-microservices crafted for a pharmaceutical product lifecycle narrative, complete with a Streamlit frontend. Use this as your architectural muse!
+**Sample Prototype**: Explore a sample that integrates demand prediction, predictive maintenance, customer support chatbot, and visual QA/QC reference kits. These are refactored into pseudo-microservices crafted for a pharmaceutical product lifecycle narrative, complete with a Streamlit frontend. Use this as your architectural muse!
 
 **Note**: Remember, this is a "hackathon out of the box". While it serves as a fantastic starting point, always refer to your specific hackathon's official rules for detailed guidelines.
 

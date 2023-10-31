@@ -1,4 +1,4 @@
-# AI Reference Kit Prototyping Framework
+# AI Reference Kit Prototyping Recipe
 
 Whether you’re a formal enterprise or getting a startup off the ground, the prototype is an essential tool to help us accomplish the following chief aims:
 
@@ -6,23 +6,23 @@ Whether you’re a formal enterprise or getting a startup off the ground, the pr
 - Justify investment into future product development.
 - Recruit supporters of your idea. 
 
-The **AI Reference Kit Prototyping Framework** enables developers to focus on the above by ensuring that composing a prototype doesn’t involve writing too much boilerplate ML code and that there’s a clear path from ideation to an attractive demo. 
+The **AI Reference Kit Prototyping Recipe** enables developers to focus on the above by ensuring that composing a prototype doesn’t involve writing too much boilerplate ML code and that there’s a clear path from ideation to an attractive demo. 
 
-### What is an AI Reference Kit Prototype? 
+### What is an AI Reference Kit "Prototype"? 
 An “AI Reference Kit Prototype” comprises distinct product lifecycle components that have been re-imagined — transforming them from legacy implementation to machine learning solutions powered by the Intel hardware and software stack with integrations of popular open-source tools. 
 
 ![image](https://github.com/intel/AI-Hackathon/assets/57263404/3a10f14a-0385-4828-8d31-83247ab1b2d3)
 
-Each component of the prototyping framework starts with an AI Reference Kit and/or Edge AI Reference Kit refactored to enable a pseudo-microservice architecture. Refactoring the original kit makes integrating the final product into more complex applications easier.
+Each component of the prototyping recipe starts with an AI Reference Kit and/or Edge AI Reference Kit refactored to enable a pseudo-microservice architecture. Refactoring the original kit makes integrating the final product into more complex applications easier.
 
 ![image](https://github.com/intel/AI-Hackathon/assets/57263404/15f5b6aa-6c25-4a25-96e5-8cffd82a3dce)
 
-This framework is ideal for simultaneously prototyping multiple parts of a workflow, showcasing how an optimized end-to-end solution could be made with Intel components to address a complex industry challenge. Let’s explore the framework below. 
+This recipe is ideal for simultaneously prototyping multiple parts of a workflow, showcasing how an optimized end-to-end solution could be made with Intel components to address a complex industry challenge. Let’s explore the recipe below. 
 
-# Framework Outline and Example
-The framework is a simple set of steps for developers to follow as they leverage the AI Reference Kits to build prototypes. We will review these steps within the context of the AI Kit Prototype for the Pharmaceutical Manufacturing Business, which serves as the exemplary kit for this framework. The code for this example can be found in this repository.
+# Recipe Outline and Example
+The recipe is a simple set of steps for developers to follow as they leverage the AI Reference Kits to build prototypes. We will review these steps within the context of the AI Kit Prototype for the Pharmaceutical Manufacturing Business, which serves as the exemplary kit for this recipe. The code for this example can be found in this repository.
 
-### Pharmaceutical Manufacturing Business Prototype
+### Pharmaceutical Manufacturing Business "Prototype"
 The AI Reference Kit prototype, “Pharmaceuticals Manufacturing Business,” integrates cutting-edge tools to streamline and enhance pharmaceutical production processes. 
 
 - **Demand Forecasting Module:** employs a time series prediction CNN-LSTM model optimized for Intel® 4th Generation Xeon® Scalable processors using Intel® Extensions for TensorFlow, ensuring accurate demand projections for various products across multiple locales. 
@@ -133,7 +133,7 @@ TRAINING_RESPONSE = requests.post(url = URL, json = DATA)
 
 To make changes to the UI components, we recommend visiting Streamlit’s API Documentation.
 
-6. **Configuring Deployment Tools:** As far as deployment goes, the framework leverages docker and docker-compose to manage the containerization and simultaneous deployment of multiple services. For more complex deployments, consider leveraging a container management tool like Kubernetes.
+6. **Configuring Deployment Tools:** As far as deployment goes, the recipe leverages docker and docker-compose to manage the containerization and simultaneous deployment of multiple services. For more complex deployments, consider leveraging a container management tool like Kubernetes.
 
 As an example, in the following dockerfile, we configure the predictive maintenance image: 
 
@@ -219,10 +219,7 @@ services:
 
 7. Managing Configurations with Make: An option for efficient setup and deployment from the command line, we leveraged the Linux make utility. You can find the make file for this prototype here. 
 
-## Summary: 
-The article discusses the AI Reference Kit Prototyping Framework, powered by Intel’s AI Reference Kits and open-source software, designed to streamline AI prototype development. The framework aids in transforming traditional components into ML solutions optimized for Intel’s hardware and software, incorporating popular open-source tools. This framework allows developers to efficiently prototype various workflows, as illustrated with the AI Reference Kit prototype for the Pharmaceutical Manufacturing Business.
-
 A few exciting things to try would be:
 - Join the [Intel Developer Cloud]([cloud.intel.com](https://bit.ly/3PXLZBS)), start an instance, clone the repository, and launch the Pharmaceutical Manufacturing prototype. 
-- Start exploring the AI Reference Kit Library and Edge AI Reference Kits for opportunities to build meaningful prototypes using this framework. 
+- Start exploring the AI Reference Kit Library and Edge AI Reference Kits for opportunities to build meaningful prototypes using this recipe. 
 
