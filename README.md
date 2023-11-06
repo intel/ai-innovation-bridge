@@ -7,5 +7,5 @@ Welcome to the Intel<sup>&reg;</sup> AI Hackathon repo! This repo contains noteb
 - [Intel<sup>&reg;</sup> GenAI Rockstar Challenge 2023](genai-rockstar-challenge-2023)
 - [Intel<sup>&reg;</sup> AI Prototyping Challenge 2023](ai-prototyping-challenge-2023)
 - [Intel<sup>&reg;</sup> AI Startup Olympics Hackathon 2023](ai-startup-olympics-2023)
-- [Intel<sup>&reg;</sup> Hack For Good 2022](innovation-hackathon-2022)
+- [Intel<sup>&reg;</sup> Hack For Good 2022](hack-for-good-2022)
 - [Hackathon Tools](hackathon-tools)
