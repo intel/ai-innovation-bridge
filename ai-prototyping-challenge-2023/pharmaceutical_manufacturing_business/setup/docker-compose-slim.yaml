@@ -8,7 +8,7 @@ services:
     ports:
       - 5003:5003
     volumes:
-      - /home/ubuntu/AI-Hackathon/ai-super-reference-kit-2023/pharmaceutical_manufacturing_business/store:/robot_maintenance/store
+      - /home/ubuntu/AI-Hackathon/ai-prototyping-challenge-2023/pharmaceutical_manufacturing_business/store:/robot_maintenance/store
     restart: on-failure
 
   app_frontend:
@@ -18,5 +18,5 @@ services:
     ports:
       - 5005:5005
     volumes:
-      - /home/ubuntu/AI-Hackathon/ai-super-reference-kit-2023/pharmaceutical_manufacturing_business/store:/app_frontend/store
+      - /home/ubuntu/AI-Hackathon/ai-prototyping-challenge-2023/pharmaceutical_manufacturing_business/store:/app_frontend/store
     restart: on-failure
