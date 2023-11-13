@@ -1,5 +1,5 @@
 ## Healthcare ChatBot Lifecycle Component
-The generative AI chatbot component uses a GPT4all-J LLM and Retrieval Augmented Generation (RAG) to respond to queries associated with fictitious robotic maintenance scenarios.  It leverages the PyTorch 2.0, LangChain, and Hugging Face Transformers on Intel® 4th Generation Xeon® Scalable processors. 
+The generative AI chatbot component uses a Falcon LLM and Retrieval Augmented Generation (RAG) to respond to queries associated with fictitious robotic maintenance scenarios.  It leverages the PyTorch 2.0, LangChain, and Hugging Face Transformers on Intel® 4th Generation Xeon® Scalable processors. 
 
 ![image](https://github.com/intel/AI-Hackathon/assets/57263404/b414f62b-e5ec-42cf-a273-29ba25f7a8aa)
 
