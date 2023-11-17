@@ -5,10 +5,10 @@
 ## Details
 
 - Complete this module to get 5 extra ticket entries to the drawing at AWS re:Invent 2023
-- Deploy the [gen-ai-fastchat](https://github.com/intel/terraform-intel-aws-vm/tree/main/examples/gen-ai-fastchat) Terraform module using an AWS Cloud account
-- The module will create an EC2 Instance with an Intel 4th Generation Xeon CPU in your AWS Account
-- Access your EC2 instance via a web URL to create AI generated lyrics
-- Screen shot or take a picture of your successful "terraform apply" results and your fastchat generated lyrics, and bring that to the Intel  Booth at AWS re:Invent 2023, to pick up your 5 additional entries to win a Beelink Mini S12 Pro Mini PC
+- Deploy the [gen-ai-demo](https://github.com/intel/terraform-intel-aws-vm/tree/main/examples/gen-ai-demo) Terraform module using an AWS Cloud account
+- The module will create an m7.4xlarge EC2 Instance with an Intel 4th Generation Xeon CPU in your AWS Account
+- Access your EC2 instance via a web URL to create AI generated lyrics and Album cover
+- Screen shot or take a picture of your successful "terraform apply" results plus fastchat generated lyrics and album cover, and bring that to the Intel  Booth at AWS re:Invent 2023, to pick up your 5 additional entries to win a Beelink Mini S12 Pro Mini PC
 - See Contest [Guidelines](guidelines.md) for complete details
 
 ## Requirements
@@ -17,18 +17,28 @@
 ## Participation Overview
 
 * Deploy the Terraform Module in your AWS account
-* Connect to the public ip of your EC2 instance to access the Fast Chat UI
-* Enter in a prompt to generate song lyrics
-* Bring a screenshot or picture of:
+  * Take a screenshot of the successful deployment
+
+* Connect to the public ip of your EC2 instance to access the Fast Chat UI and the Stable Diffusion module  `http://yourpublicip:7860`
+  * Enter in a prompt to generate song lyrics
+  * Take a screenshot of the song lyrics generated
+
+* Connect to the public ip of your EC2 instance to access the Stable Diffusion `http://yourpublicip:5000`
+  * Use the prompt to generate a picture to use for your album cover. (Note the time it takes to generate using Intel AMX)
+  * Open `http://yourpublicip:5001` and use the same prompt as above to generate your image.  (Note the time it takes to generate without Intel AMX)
+
+* Bring a screenshot or picture of the following to the Intel Booth
     1) Terraform output of the successful deployment he Module
     2) The song lyrics you generated using FastChat
+    3) Screen shot of your album cover
+
 
 Refer to the [Official Rules](terms.md)
 
 
 ## Instructions on how to deploy the GenAI FastChat and Stable Diffusion module.
 
-NOTE: This module will spin up an m7i.8xlarge in the us-east1 region by default. Make sure to use the terraform destroy command to ensure the instance is deleted when you are finished.
+NOTE: This module will spin up an m7i.4xlarge in the us-east1 region by default. Make sure to use the terraform destroy command to ensure the instance is deleted when you are finished.
 
 To start, open your AWS account and click the Cloudshell
 At the command prompt enter
@@ -65,7 +75,7 @@ terraform apply
 
 After the Terraform module successfully creates the EC2 instance, **wait ~15 minutes** for the recipe to download/install FastChat, Stable Diffusion and the LLM model before continuing.
 
-Screen Capture the results of the Terraform Apply Command so you can bring that to us at the HashiConf Intel Booth <br>
+Screen Capture the results of the Terraform Apply Command so you can bring that to us at the Intel Booth <br>
 Example :
 
 ![Module Success](images/genai-aws-success.png)
@@ -76,18 +86,13 @@ WAIT 10 MINUTES
 ```
 After the Terraform module successfully creates the EC2 instance, **wait ~10 minutes** for the recipe to download/install FastChat and the LLM model before continuing.
 
-1. ## Accessing the Demo
+## Accessing the Demo
 
 You can access the demos using the following:
 
 - FastChat: `http://yourpublicip:7860`
-- Intel Optimized Stable Diffusion: `http://yourpublicip:5000`
-- Out of the box Stable Diffusion: `http://yourpublicip:5001`
 
-- Note: This module is created using the m7i.4xlarge instance size, you can change your instance type by modifying the **
-instance_type = "m7i.4xlarge"** in the main.tf under the **ec2-vm module** section of the code. If you just change to an 8xlarge and then run **terraform apply** the module will destroy the old instance and rebuild with a larger instance size.
-
-4. Type in the prompt to interact with fastchat. Enter your message or question in the chat prompt to see the Fastchat in action?  Example:
+1. Type in the prompt to interact with fastchat. Enter your message or question in the chat prompt to see the Fastchat in action?  Example:
 
     ```text
     Prompt: Write a song about Star Wars in the style of Frank Sinatra
@@ -111,13 +116,25 @@ instance_type = "m7i.4xlarge"** in the main.tf under the **ec2-vm module** secti
     ```
 
     ***Screenshot your lyrics***
+2. Create your Album Cover using Intel Optimized Stable Diffusion: `http://yourpublicip:5000`
+Enter a prompt to generate a picture
+![Album Cover](images/stablediff1.png)
+Notice the time to complete at the bottom using Intel AMX
 
+***Screenshot your Album Cover***
 
-5. Screen shot your lyrics as and bring both your terraform output results and your lyrics to the Intel booth at HashiConf 2023 between 8:00am PST November 27th and 3:00pm PST November 30th 
+3. Out of the box Stable Diffusion: `http://yourpublicip:5001`
+Enter the same prompt as above prompt to generate a picture
+![Album Cover](images/stablediff2.png)
+Notice the time to complete at the bottom 
+
+4. Bring your screenshots to us at the Intel booth between 4:00pm PST November 27th and 2:00pm PST November 30th 
 
 5. To delete the demo:<br>
-  a. Exit the VM instance by pressing Ctrl-C to break out of fastchat<br>
-  b. Then run Terraform destroy to delete all resources created<br>
+  From the AWS Cloud Shell, run the command:
+  ```text
+    terraform destroy
+```
 
 
 ## Module Overview
