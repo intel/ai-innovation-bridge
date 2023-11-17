@@ -13,6 +13,7 @@
 
 ## Requirements
 - AWS Cloud Account
+- 30 minutes of your time
 
 ## Participation Overview
 
@@ -39,6 +40,8 @@ Refer to the [Official Rules](terms.md)
 ## Instructions on how to deploy the GenAI FastChat and Stable Diffusion module.
 
 NOTE: This module will spin up an m7i.4xlarge in the us-east1 region by default. Make sure to use the terraform destroy command to ensure the instance is deleted when you are finished.
+
+<b><font color=red> This module takes approximately 20 minutes to download the LLM and then configure the EC2 instance via the ansible recipe.</b></font>
 
 To start, open your AWS account and click the Cloudshell
 At the command prompt enter
