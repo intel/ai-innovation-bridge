@@ -76,7 +76,7 @@ terraform plan
 terraform apply
 ```
 
-After the Terraform module successfully creates the EC2 instance, **wait ~15 minutes** for the recipe to download/install FastChat, Stable Diffusion and the LLM model before continuing.
+After the Terraform module successfully creates the EC2 instance, **wait ~20 minutes** for the recipe to download/install FastChat, Stable Diffusion and the LLM model before continuing.
 
 Screen Capture the results of the Terraform Apply Command so you can bring that to us at the Intel Booth <br>
 Example :
@@ -85,9 +85,9 @@ Example :
 <br>
 
 ```Shell
-WAIT 10 MINUTES
+WAIT 20 MINUTES
 ```
-After the Terraform module successfully creates the EC2 instance, **wait ~10 minutes** for the recipe to download/install FastChat and the LLM model before continuing.
+After the Terraform module successfully creates the EC2 instance, **wait ~20 minutes** for the recipe to download/install FastChat and the LLM model before continuing.
 
 ## Accessing the Demo
 
