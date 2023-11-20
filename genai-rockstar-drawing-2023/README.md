@@ -7,8 +7,8 @@
 - Complete this module to get 5 extra ticket entries to the drawing at AWS re:Invent 2023
 - Deploy the [gen-ai-demo](https://github.com/intel/terraform-intel-aws-vm/tree/main/examples/gen-ai-demo) Terraform module using an AWS Cloud account
 - The module will create an m7.4xlarge EC2 Instance with an Intel 4th Generation Xeon CPU in your AWS Account
-- Access your EC2 instance via a web URL to create AI generated lyrics and Album cover
-- Screen shot or take a picture of your successful "terraform apply" results plus fastchat generated lyrics and album cover, and bring that to the Intel  Booth at AWS re:Invent 2023, to pick up your 5 additional entries to win a Beelink Mini S12 Pro Mini PC
+- Access your EC2 instance via a web URL to create AI generated lyrics and album cover
+- You will screen shot or take a picture of your successful "terraform apply" results plus fastchat generated lyrics and album cover, and bring that to the Intel  Booth at AWS re:Invent 2023, to pick up your 5 additional entries to win a Beelink Mini S12 Pro Mini PC
 - See Contest [Guidelines](guidelines.md) for complete details
 
 ## Requirements
@@ -20,7 +20,7 @@
 * Deploy the Terraform Module in your AWS account
   * Take a screenshot of the successful deployment
 
-* Connect to the public ip of your EC2 instance to access the Fast Chat UI and the Stable Diffusion module  `http://yourpublicip:7860`
+* After approximately 20 minutes, connect to the public ip of your EC2 instance to access the Fast Chat UI and the Stable Diffusion module  `http://yourpublicip:7860`
   * Enter in a prompt to generate song lyrics
   * Take a screenshot of the song lyrics generated
 
@@ -43,8 +43,7 @@ NOTE: This module will spin up an m7i.4xlarge in the us-east1 region by default.
 
 <b><font color=red> This module takes approximately 20 minutes to download the LLM and then configure the EC2 instance via the ansible recipe.</b></font>
 
-To start, open your AWS account and click the Cloudshell
-At the command prompt enter
+To start, open your AWS account and open AWS Cloudshell. At the command prompt enter
 ```Shell
 terraform
 ```
