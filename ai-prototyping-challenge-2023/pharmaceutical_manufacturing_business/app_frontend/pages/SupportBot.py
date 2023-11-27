@@ -11,7 +11,7 @@ with col11:
     st.image(image)
 with col22:
     st.markdown("##### The Robot Maintenance Support ChatBot component, SupportBot, is a generative AI question-answering\
-        model based on the open-source LLM, gpt4all-j. The performance of this model is augmented by\
+        model based on the open-source LLM, GPT4All Falcon. The performance of this model is augmented by\
             leveraging a similarity search and prompt injection through the Langchain library. ")
     
 st.divider()
