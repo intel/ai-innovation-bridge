@@ -6,21 +6,21 @@ These rules (“Rules”) govern the Intel Gen AI Rockstar Drawing (the “Drawi
 
 1.	How to Enter: The Drawing requires participants attend the AWS re:Invent 2023 in Las Vegas Nevada, USA and visit the Intel Booth to receive one (1) “physical” numbered ticket to the drawing.  
 
-    To obtain an additional (10) “physical” numbered tickets to the drawing, participants can use their own AWS account to run a Terraform Module which includes a generative AI model to create song lyrics.  To obtain the additional (10) tickets, you must successfully deploy the Terraform code and provide visual proof of the successful completion of the Terraform code, along with the song lyrics generated from the AWS instance that was created from the Terraform module.
+    To obtain an additional (5) “physical” numbered tickets to the drawing, participants can use their own AWS account to run a Terraform Module which includes a generative AI model to create song lyrics.  To obtain the additional (5) tickets, you must successfully deploy the Terraform code and provide visual proof of the successful completion of the Terraform code, along with the song lyrics generated from the AWS instance that was created from the Terraform module.
 
-    Intel Corporation (the “Sponsor”) is offering the Drawing and will award prizes based a random drawing from all of the distributed tickets.  To receive an entry, visit the Intel Booth at AWS re:Invent 2023 between 9:00am on November 27th 2023 and 3:00pm PT on November 30th, 2023.
+    Intel Corporation (the “Sponsor”) is offering the Drawing and will award prizes based a random drawing from all of the distributed tickets.  To receive an entry, visit the Intel Booth at AWS re:Invent 2023 between 4:00pm on November 27th 2023 and 2:00pm PT on November 30th, 2023.
 
 
 2.	Eligibility: The Drawing is open to any attendees of the AWS re:Invent 2023 in Las Vegas Nevada, USA. Employees, officers and representatives (and members of their immediate families and those living in the same household of each) of Intel Corporation, its parents, subsidiaries and affiliated companies, advertising and promotion agencies and any company involved in the design, execution, production or judging of this promotion (“Drawing entities”) are ineligible. Void where prohibited.
 
 
-3.	Entry Requirements: You must physically visit the Intel Booth at AWS re:Invent 2023 in Las Vegas Nevada, USA between 9:00am PST  November 27th and 3:00pm PST November 30th to receive one (1) “physical” numbered ticket to the drawing. 
+3.	Entry Requirements: You must physically visit the Intel Booth at AWS re:Invent 2023 in Las Vegas Nevada, USA between 4:00pm PST  November 27th and 2:00pm PST November 30th to receive one (1) “physical” numbered ticket to the drawing. 
 
-    To obtain an additional (10) “physical” numbered tickets to the drawing, participants can use their own AWS account to run a Terraform Module which includes a generative AI model to create song lyrics.  To obtain the additional (10) tickets, you must successfully deploy the Terraform code and provide visual proof of the successful completion of the Terraform code, along with the song lyrics generated from the AWS instance that was created from the Terraform module.
+    To obtain an additional (5) “physical” numbered tickets to the drawing, participants can use their own AWS account to run a Terraform Module which includes a generative AI model to create song lyrics.  To obtain the additional (5) tickets, you must successfully deploy the Terraform code and provide visual proof of the successful completion of the Terraform code, along with the song lyrics generated from the AWS instance that was created from the Terraform module.
 
-4.	Prizes: Three (3) prizes will be awarded by drawing “physical” numbered tickets in person at the Intel booth at AWS re:Invent 2023 in Las Vegas Nevada, USA.  Prizes will consist of three(3) Alienware Gaming Laptops [Alienware m16 Gaming laptop with 13th Gen Intel® Core™ i9-13900HX processor] (est. retail value of $2200 per laptop)
+4.	Prizes: Three (3) prizes will be awarded by drawing “physical” numbered tickets in person at the Intel booth at AWS re:Invent 2023 in Las Vegas Nevada, USA.  Prizes will consist of three(3) Beelink Mini S12 Pro Mini PC, Intel 12th Gen Alder Lake- N100 up to 3.4GHz (estimated retail value of $200ea.)
 
-5. Drawing Selection and Notification of Winners: There will be one (1) drawing per day on November 28th, 29th and 30th 2023 at the Intel booth at AWS re:Invent 2023 in Las Vegas Nevada, USA.  
+5. Drawing Selection and Notification of Winners: There will be one (1) drawing per day on November 28th at 5:30pm PST, November 29th at 5:30pm PST, and November 30th 2023 at 2:30pm PST at the Intel "Tree of Innovation" at AWS re:Invent 2023 in Las Vegas Nevada, USA.  
 
     Must be present with the “physical” numbered ticket to present to the Intel representative hosting the drawing.  Intel reserves the right to select an alternative winner should the first or second winner fail to be present to claim their prize.
 

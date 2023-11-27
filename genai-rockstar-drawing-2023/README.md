@@ -4,32 +4,46 @@
 
 ## Details
 
-- Complete this module to get 10 extra ticket entries to the drawing at AWS re:Invent 2023
-- Deploy the [gen-ai-fastchat](https://github.com/intel/terraform-intel-aws-vm/tree/main/examples/gen-ai-fastchat) Terraform module using an AWS Cloud account
-- The module will create an EC2 Instance with an Intel 4th Generation Xeon CPU in your AWS Account
-- Access your EC2 instance via a web URL to create AI generated lyrics
-- Screen shot or take a picture of your successful "terraform apply" results and your fastchat generated lyrics, and bring that to the Intel  Booth at AWS re:Invent 2023, to pick up your 10 additional entries to win a Alienware Gaming Laptop!
+- Complete this module to get 5 extra ticket entries to the drawing at AWS re:Invent 2023
+- Deploy the [gen-ai-demo](https://github.com/intel/terraform-intel-aws-vm/tree/main/examples/gen-ai-demo) Terraform module using an AWS Cloud account
+- The module will create an m7.4xlarge EC2 Instance with an Intel 4th Generation Xeon CPU in your AWS Account
+- Access your EC2 instance via a web URL to create AI generated lyrics and album cover
+- You will screen shot or take a picture of your successful "terraform apply" results plus fastchat generated lyrics and album cover, and bring that to the Intel  Booth at AWS re:Invent 2023, to pick up your 5 additional entries to win a Beelink Mini S12 Pro Mini PC
 - See Contest [Guidelines](guidelines.md) for complete details
 
 ## Requirements
 - AWS Cloud Account
+- 30 minutes of your time
 
 ## Participation Overview
 
 * Deploy the Terraform Module in your AWS account
-* Connect to the public ip of your EC2 instance to access the Fast Chat UI
-* Enter in a prompt to generate song lyrics
-* Bring a screenshot or picture of:
+  * Take a screenshot of the successful deployment
+
+* After approximately 20 minutes, connect to the public ip of your EC2 instance to access the Fast Chat UI and the Stable Diffusion module  `http://yourpublicip:7860`
+  * Enter in a prompt to generate song lyrics
+  * Take a screenshot of the song lyrics generated
+
+* Connect to the public ip of your EC2 instance to access the Stable Diffusion `http://yourpublicip:5000`
+  * Use the prompt to generate a picture to use for your album cover. (Note the time it takes to generate using Intel AMX)
+  * Open `http://yourpublicip:5001` and use the same prompt as above to generate your image.  (Note the time it takes to generate without Intel AMX)
+
+* Bring a screenshot or picture of the following to the Intel Booth
     1) Terraform output of the successful deployment he Module
     2) The song lyrics you generated using FastChat
+    3) Screen shot of your album cover
+
 
 Refer to the [Official Rules](terms.md)
 
 
-## Instructions on how to deploy the GenAI FastChat Module
+## Instructions on how to deploy the GenAI FastChat and Stable Diffusion module.
 
-Open your AWS account and click the Cloudshell
-At the command prompt enter
+NOTE: This module will spin up an m7i.4xlarge in the us-east1 region by default. Make sure to use the terraform destroy command to ensure the instance is deleted when you are finished.
+
+<b><font color=red> This module takes approximately 20 minutes to download the LLM and then configure the EC2 instance via the ansible recipe.</b></font>
+
+To start, open your AWS account and open AWS Cloudshell. At the command prompt enter
 ```Shell
 terraform
 ```
@@ -41,66 +55,46 @@ ln -s ~/.tfenv/bin/* ~/bin/
 tfenv install 1.3.0
 tfenv use 1.3.0
 ```
-Download and run the [gen-ai-fastchat](https://github.com/intel/terraform-intel-aws-vm/tree/main/examples/gen-ai-fastchat) Terraform Module by typing this command
+Download and run the [Gen-AI-Demo](https://github.com/intel/terraform-intel-aws-vm/tree/main/examples/gen-ai-demo) Terraform Module by typing this command
+
 ```Shell
 git clone https://github.com/intel/terraform-intel-aws-vm.git
 ```
-Change into the fastchat example folder
+
+Change into the `examples/gen-ai-demo` example folder
+
 ```Shell
-cd terraform-intel-aws-vm/examples/gen-ai-fastchat
+cd terraform-intel-aws-vm/examples/gen-ai-demo
 ```
 
-Run the Terraform Commands
+Run the Terraform Commands below to deploy the demos.
+
 ```Shell
 terraform init
 terraform plan
 terraform apply
 ```
-Screen Capture the results of the Terraform Apply Command so you can bring that to us at the HashiConf Intel Booth <br>
+
+After the Terraform module successfully creates the EC2 instance, **wait ~20 minutes** for the recipe to download/install FastChat, Stable Diffusion and the LLM model before continuing.
+
+Screen Capture the results of the Terraform Apply Command so you can bring that to us at the Intel Booth <br>
 Example :
 
 ![Module Success](images/genai-aws-success.png)
 <br>
 
 ```Shell
-WAIT 10 MINUTES
+WAIT 20 MINUTES
 ```
-After the Terraform module successfully creates the EC2 instance, **wait ~10 minutes** for the recipe to download/install FastChat and the LLM model before continuing.
+After the Terraform module successfully creates the EC2 instance, **wait ~20 minutes** for the recipe to download/install FastChat and the LLM model before continuing.
 
-1. Connect to the newly created AWS EC2 instance using SSH<br>
-  
-      a. The terraform module creates a key pair and adds the public key to the EC2 instance. It keeps the private key in the same folder from where the **terraform apply** was run. File name = tfkey.private<br>
-  
-    b. At your Terraform prompt, nagivate to the folder from where you ran the **terraform apply** command and change the permissions of the file:
-    ```hcl
-    chmod 400 tfkey.private
-    ```
+## Accessing the Demo
 
-    c. Run the ssh command as below:
-    ```hcl
-    ssh ubuntu@<Public_IP_Address_EC2_Instance> -i tfkey.private
-    ```
+You can access the demos using the following:
 
-2. Once you are logged into the EC2 instance, run the command
-    ```hcl
-    source /usr/local/bin/run_demo.sh
-    ```
-    If successful your prompt will look similar to this
-    ```shell
-    ubuntu@ip-172-31-33-45:~$ source /usr/local/bin/run_demo.sh
-    2023-09-06 14:10:00 | INFO | gradio_web_server_multi | args: Namespace(host='0.0.0.0', port=None, share=True, controller_url='http://localhost:21001', concurrency_count=10, model_list_mode='once', moderate=False, add_chatgpt=False, add_claude=False, add_palm=False, anony_only_for_proprietary_model=False, register_openai_compatible_models=None, gradio_auth_path=None, elo_results_file=None, leaderboard_table_file=None)
-    2023-09-06 14:10:00 | INFO | gradio_web_server | Models: ['4th_GenXeon_Vicuna_7b']
-    2023-09-06 14:10:00 | INFO | stdout | Running on local URL:  http://0.0.0.0:7860
-    2023-09-06 14:10:02 | INFO | stdout | Running on public URL: https://64163ad5b65c927ff1.gradio.live
-    2023-09-06 14:10:02 | INFO | stdout |
-    2023-09-06 14:10:02 | INFO | stdout | This share link expires in 72 hours. For free permanent hosting and GPU upgrades, run `gradio deploy` from Terminal to deploy to Spaces (https://huggingface.co/spaces)
-    ```
+- FastChat: `http://yourpublicip:7860`
 
-
-3. Now you can access the Fastchat by opening your browser and entering the following URL     
-http://yourpublicip:7860
-
-4. Type in the prompt to interact with fastchat. Enter your message or question in the chat prompt to see the Fastchat in action?  Example:
+1. Type in the prompt to interact with fastchat. Enter your message or question in the chat prompt to see the Fastchat in action?  Example:
 
     ```text
     Prompt: Write a song about Star Wars in the style of Frank Sinatra
@@ -124,13 +118,25 @@ http://yourpublicip:7860
     ```
 
     ***Screenshot your lyrics***
+2. Create your Album Cover using Intel Optimized Stable Diffusion: `http://yourpublicip:5000`
+Enter a prompt to generate a picture
+![Album Cover](images/stablediff1.png)
+Notice the time to complete at the bottom using Intel AMX
 
+***Screenshot your Album Cover***
 
-5. Screen shot your lyrics as and bring both your terraform output results and your lyrics to the Intel booth at HashiConf 2023 between 8:00am PST November 27th and 3:00pm PST November 30th 
+3. Out of the box Stable Diffusion: `http://yourpublicip:5001`
+Enter the same prompt as above prompt to generate a picture
+![Album Cover](images/stablediff2.png)
+Notice the time to complete at the bottom 
+
+4. Bring your screenshots to us at the Intel booth between 4:00pm PST November 27th and 2:00pm PST November 30th 
 
 5. To delete the demo:<br>
-  a. Exit the VM instance by pressing Ctrl-C to break out of fastchat<br>
-  b. Then run Terraform destroy to delete all resources created<br>
+  From the AWS Cloud Shell, run the command:
+  ```text
+    terraform destroy
+```
 
 
 ## Module Overview
@@ -142,7 +148,7 @@ You will need an AWS account as this terraform module will launch a M7i.4xlarge 
 - [FastChat](https://github.com/lm-sys/FastChat)
 
 For this you will be using one of the [Intel Cloud Optimization Modules](https://www.intel.com/content/www/us/en/developer/topic-technology/cloud-optimization.html) to provision the VM. <br>
-You will be using the [AWS VM Module](https://github.com/intel/terraform-intel-aws-vm) and the gen-ai-fastchat example in that module.
+You will be using the [AWS VM Module](https://github.com/intel/terraform-intel-aws-vm) and the gen-ai-demo example in that module.
 
 The gen-ai-fastchat example leverages one of Intel's Optimized Cloud Recipes. If you want to experiment with this on your own, you can find the recipe [here](https://github.com/intel/optimized-cloud-recipes/tree/main/recipes/ai-fastchat-amx-ubuntu).
 
