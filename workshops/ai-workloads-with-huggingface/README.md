@@ -10,23 +10,23 @@ The workshop covers a range of optimizations available for Intel software and ha
 
 This repository contains a total of 6 notebooks, each designed to guide you through different aspects of utilizing Intel optimizations with Hugging Face technologies:
 
-### 1 - Introduction to Hugging Face - Understanding Model Loading and Inference
-- **Description:** An easy introduction to accessing and inferring models using Hugging Face tools.
+#### 1 - Introduction to Hugging Face - Understanding Model Loading and Inference
+An easy introduction to accessing and inferring models using Hugging Face tools.
 
-### 2 - Leveraging Intel Optimizations with Hugging Face for Enhanced Model Performance
-- **Description:** Demonstrates how to improve training performance by utilizing Intel Extension for PyTorch.
+#### 2 - Leveraging Intel Optimizations with Hugging Face for Enhanced Model Performance
+Demonstrates how to improve training performance by utilizing Intel Extension for PyTorch.
 
-### 3 - Harnessing Intel Optimizations for Efficient Model Quantization with Hugging Face
-- **Description:** Guides on using Optimum Intel to perform dynamic quantization for enhanced model inference performance.
+#### 3 - Harnessing Intel Optimizations for Efficient Model Quantization with Hugging Face
+Guides on using Optimum Intel to perform dynamic quantization for enhanced model inference performance.
 
-### 4 - ITREX - Leveraging Intel Optimizations for Enhanced Inference with Hugging Face
-- **Description:** Shows how to use the Intel Extension for Transformers to optimize inference by loading models in INT4 precision.
+#### 4 - ITREX - Leveraging Intel Optimizations for Enhanced Inference with Hugging Face
+Shows how to use the Intel Extension for Transformers to optimize inference by loading models in INT4 precision.
 
-### 5 - Enhancing Inference Performance with Optimum Intel and OpenVINO
-- **Description:** Explains how to utilize Optimum Intel alongside the OpenVINO toolkit for optimized model inference.
+#### 5 - Enhancing Inference Performance with Optimum Intel and OpenVINO
+Explains how to utilize Optimum Intel alongside the OpenVINO toolkit for optimized model inference.
 
-### 6 - Uploading and Sharing Models on Hugging Face Hub with Intel Optimizations
-- **Description:** Demonstrates the process of sharing a trained model with optimizations on the Hugging Face Hub, contributing to the open-source community.
+#### 6 - Uploading and Sharing Models on Hugging Face Hub with Intel Optimizations
+Demonstrates the process of sharing a trained model with optimizations on the Hugging Face Hub, contributing to the open-source community.
 
 ## Getting Started
 
