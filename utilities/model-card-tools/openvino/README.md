@@ -56,10 +56,10 @@ The [`openvino_llm_optimizations.py`](openvino_llm_optimizations.py) script curr
 ### Model Optimization
 
 You can customize the [`openvino_llm_optimizations.py`](openvino_llm_optimizations.py) script by modifying the following parameters:
-- `model_path`: The model path to LLM on Hugging Face, e.g., `helenai/gpt2-ov`.
-- `task`: The LLM task. The supported options include: `text-generation`, `translation_en_to_fr`.
-- `device`: The device on the AI PC to optimize the LLM. The supported options include GPU, NPU, or CPU.
-- `prompt`: The input prompt for the LLM inference task.
+- **`model_path`**: The model path to LLM on Hugging Face, e.g., `helenai/gpt2-ov`.
+- **`task`**: The LLM task. The supported options include: `text-generation`, `translation_en_to_fr`.
+- **`device`**: The device on the AI PC to optimize the LLM. The supported options include GPU, NPU, and CPU.
+- **`prompt`**: The input prompt for the LLM inference task.
 
 ### Example Usage
 
@@ -84,7 +84,7 @@ Response: In the spring, flowers bloom all over the land. The flowers bloom in s
 
 #### Text Translation
 
-To run optimized inference of a text generation LLM with OpenVINO, use the following command:
+To run optimized inference of a text translation LLM with OpenVINO, use the following command:
 
 ```python
 python openvino_llm_optimizations.py --model_path=t5-small --task=translation_en_to_fr --device=gpu --prompt="In the spring, flowers bloom"
