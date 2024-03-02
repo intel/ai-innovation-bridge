@@ -2,13 +2,13 @@
   <img src="assets/openvino-logo-purple-black.png?raw=true" alt="OpenVINO" width="500"/>
 </p>
 
-# Hugging Face* LLM Optimizations with OpenVino™ on Intel® Core Ultra™ AI PC
+# Hugging Face* LLM Optimizations with OpenVINO™ on Intel® Core Ultra™ AI PC
 
 © Copyright 2024, Intel® Corporation
 
 ## Table of Contents
 - [Introduction](#introduction)
-- [What is OpenVINO™ Toolkit?](#what-is-openvino™-toolkit)
+- [What is OpenVINO™ Toolkit?](#what-is-openvino-toolkit)
 - [System Requirements](#system-requirements)
 - [How to use](#usage)
 - [License](#license)
@@ -45,7 +45,7 @@ cd ai-innovation-bridge/utilities/model-card-tools/openvino
 pip install -r requirements.txt
 ```
 
-Once you have successfully installed the dependencies, you are ready to optimize your Hugging Face LLMs with OpenVINO. 
+Once you have successfully installed the dependencies, you are ready to optimize your Hugging Face LLMs with OpenVINO™. 
 
 ### Supported LLM Tasks
 
