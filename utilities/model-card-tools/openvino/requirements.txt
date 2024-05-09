@@ -1,0 +1,4 @@
+openvino==2023.3.0
+optimum==1.17.1
+optimum[openvino,nncf]==1.17.1
+transformers==4.38.1
