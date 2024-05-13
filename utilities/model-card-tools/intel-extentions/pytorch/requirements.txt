@@ -1,0 +1,4 @@
+torch
+optimum.intel
+optimum[ipex]
+transformers

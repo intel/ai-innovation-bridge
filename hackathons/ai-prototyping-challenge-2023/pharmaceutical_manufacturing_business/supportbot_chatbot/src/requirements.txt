@@ -3,6 +3,6 @@ pygpt4all==1.1.0
 gpt4all==1.0.12
 transformers==4.38.0
 datasets==2.14.6
-tiktoken==0.4.0
+tiktoken==0.4.0s
 chromadb==0.4.15
 sentence_transformers==2.2.2
