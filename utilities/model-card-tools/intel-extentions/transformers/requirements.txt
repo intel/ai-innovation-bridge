@@ -4,5 +4,5 @@ intel-extension-for-pytorch==2.1.100
 intel-extension-for-transformers==1.2.2
 neural-speed==0.2
 neural-compressor==2.5
-torch==2.1.1
+torch==2.2.0
 transformers==4.38.0
