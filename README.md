@@ -7,3 +7,5 @@ Welcome to our AI Innovation Bridge repo! This repo contains reference solutions
 - [solutions](solutions)
 - [workshops](workshops)
 - [utilities](utilities)
+
+Enjoy!
