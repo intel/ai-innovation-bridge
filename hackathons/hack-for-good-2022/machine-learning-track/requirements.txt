@@ -10,7 +10,7 @@ modin==0.15.2
 numpy==1.23.2
 pandas==1.4.3
 plotly==5.10.0
-scikit-learn==1.1.2
+scikit-learn==1.5.0
 scikit-learn-intelex==2021.6.3
 seaborn==0.11.2
 xgboost==1.6.1
